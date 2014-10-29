@@ -1,0 +1,477 @@
+%Change this for two sided printing and be careful to check for resulting changes!!
+\documentclass[12pt,oneside,openright]{report} 
+
+\title{Proton structure at the LHC}
+\author{Nathan Hartland}
+\date{2014}
+
+%Glossary begins. Define everything here. Pain but it was difficult to implement in separate file...
+\usepackage[phd,fancyhdr]{edmaths}
+\usepackage{nnpdf}
+\usepackage{cite, multirow}
+
+%%% helps to discourage hyphenation 10000 for no hyphens but dodgy line lengths%%%
+\hyphenpenalty=5000
+\tolerance=1000
+
+\newcommand{\wrt}[1]{\mathrm{d}{#1}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+
+%%%% nh macros
+\graphicspath{{./}{figs/}}
+\newcommand{\packagename} {{\tt MCgrid }\!\!}
+\newcommand{\rivet} {{\tt Rivet }\!\!}
+\newcommand{\Rivet} {{\tt Rivet }\!\!}
+\newcommand{\appl} {{\tt APPLgrid }\!\!}
+\newcommand{\Sherpa} {{\tt SHERPA }\!\!}
+\newcommand{\pt}{$p_\perp$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% abbreviate Greek
+\newcommand{\ax}{\alpha}
+\newcommand{\bx}{\beta}
+\newcommand{\cx}{\gamma}
+\newcommand{\dx}{\delta}
+\newcommand{\ox}{\omega}
+\newcommand{\lx}{\lambda}
+\newcommand{\gx}{\gamma}
+\newcommand{\ab}{\bar\alpha}
+\newcommand{\bb}{\bar\beta}
+\newcommand{\cb}{\bar\gamma}
+\newcommand{\db}{\bar\delta}
+\newcommand{\Sx}{\Sigma}
+\newcommand{\Lx}{\Lambda}
+\newcommand{\Ox}{\Omega}
+\newcommand{\Dx}{\Delta}
+\newcommand{\Gx}{\Gamma}
+\newcommand{\te}{\tilde \epsilon}
+\newcommand{\tm}{\tilde \mu}
+\newcommand{\tmu}{\tilde \mu}
+
+
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+% Cal
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\W}{\mathcal W}
+\newcommand{\V}{\mathcal V}
+\def\Im{\,{\rm Im}\, }
+\def\Re{\,{\rm Re}\, }
+
+\newcommand{\nsub}{n_\mathrm{sub}}
+
+\begin{document}
+\maketitle
+\setcounter{page}{1}
+%If you want a dedication..
+\dedication{To my parents}
+
+\declaration
+
+\acknowledgements
+
+%Spacing of 1.5 to abide by regulations. Don't write outside this... Change for quotations and notes (if any)
+\begin{spacing}{1.5}
+
+\begin{abstract}
+A determination of Parton Distribution Functions (PDFs) from a global fit to a dataset including measurements from the LHC has been performed for the first time. The determinations
+have been performed according to the NNPDF methodology, leading to a fit relatively free of parametrisation bias and with an accurate account of PDF uncertainty.
+
+In this thesis the importance of QCD measurements at the LHC to PDF extraction are discussed, and we summarise some of the technical difficulties in their inclusion into PDF fits. A number of methods are presented that permit the efficient inclusion of these observables
+into PDF determinations. 
+
+Firstly a Bayesian reweighting procedure taking advantage of the Monte Carlo representation of PDF uncertainties in NNPDF sets is discussed. The utility of the Bayesian reweighting method is demonstrated by a study of the impact of early $W$ production asymmetry measurements from ATLAS, CMS and LHCb upon an earlier PDF set.
+
+A package for the fast computation of observables in an automated NLO framework is presented, providing an interface between Monte Carlo event generators and NLO interpolation tools.
+
+Finally, a new method of combining PDF evolution with interpolating codes for hadronic observable computation is also described. This method largely overcomes the computational difficulties in performing fast perturbative QCD predictions for collider observables. The method has been applied to the determination of PDFs from a global dataset including electroweak vector boson production data from LHCb, ATLAS and CMS along with inclusive jet data from ATLAS. The resulting set, NNPDF2.3 provides the most accurate determination of parton distributions via the NNPDF methodology to date.
+
+Finally, the method of closure testing is introduced, and the method is applied to the study of the NNPDF methodology. A number of improvements are found in the minimisation and stopping procedures, which are adopted for the development of the next NNPDF release, NNPDF3.0. Alongside the sounder methodological basis, the NNPDF3.0 PDF set will provide a determination based upon an expanded dataset in order to produce a comprehensive upgrade to the NNPDF2.3 family of fits.
+\vspace{10mm}
+\normalsize
+
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\pagestyle{plain}
+\tableofcontents
+\cleardoublepage}
+ \cleardoublepage
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoffigures
+ \cleardoublepage
+    \addcontentsline{toc}{chapter}{List of Tables}
+    \listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{1-Introduction/chapter1}
+\include{2-PDFs/chapter2}
+\include{3-PDFdet/chapter3}
+\include{4-LHCtools/chapter4}
+\include{5-LHCdata/chapter5}
+\include{6-LHCimpact/chapter6}
+\include{7-PostLHC/chapter7}
+\include{8-Conclusion/chapter8}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{hunsrt.bst}
+\bibliography{bibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\chapter{Summary of experimental data}
+\label{app:summary_tables}
+In this appendix, the experimental measurements discussed in this thesis are summarised. For each experiment, the underlying process and physical observable measured are specified, along with a brief summary of the PDF flavours and combinations targeted by the data.
+
+\clearpage
+
+\begin{table}
+\label{tab:FTDIS_summary}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{ \textbf{Fixed-Target Deep Inelastic Scattering} }\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.}& \textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$\mu p/d \to \mu X$ & BCDMS& $F_2^p$, $F_2^d$ &\cite{Benvenuti:1989rh,Benvenuti:1989fm} & $q$, $\bar{q}$\\
+$\mu p/d \to \mu X$ & NMC &$F_2^p$, $F_2^d/F_2^p$ & \cite{Arneodo:1996kd,Arneodo:1996qe} & $q$, $\bar{q}$, $d/u$\\
+$\mu p/d \to \mu X$ & Fermilab E665 & $F_2^p$, $F_2^d$ & \cite{Adams:1996gu} & $q$, $\bar{q}$\\
+\hline
+$\mu p \to \mu X$ & BCDMS &$F_L$ &\cite{Benvenuti:1989rh} & $g$ \\
+$\mu p/d \to \mu X$ & NMC &$F_L$ & \cite{Arneodo:1996qe} & $g$\\
+$e p/d \to e X$ & SLAC &$F_L$& \cite{Whitlow:1990gk} & $g$\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of discussed Fixed-Target DIS experiments, arranged as in Table~\ref{tab:pp_summary}. Here deuteron and proton structure function data is summarised.}
+\end{table}%
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{HERA Deep Inelastic Scattering}}\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.} &\textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$e p \to e X$ & H1 & NC $\sigma$ & \cite{Adloff:2000qk,Adloff:2000qj,Adloff:2003uh} & $g$, $q$, $\bar{q}$\\
+$e p \to e X$ & ZEUS & NC $\sigma$& \cite{Breitweg:1998dz,Chekanov:2001qu,Chekanov:2002ej,Chekanov:2003yv}& $g$, $q$, $\bar{q}$\\
+\hline
+$e^+ p \to \bar{\nu} X$ & H1 & CC $\sigma$& \cite{Chekanov:2003vw} & $d + s$ , $\bar{u}$ \\
+$e^+ p \to \bar{\nu} X$ & ZEUS & CC $\sigma$ & \cite{Adloff:2003uh} & $d + s$ , $\bar{u}$ \\
+\hline
+$e p \to e X+c$ & H1 & $F^2_c$ & \cite{Chekanov:2003rb,Chekanov:2007ch,Aktas:2005iw,Aktas:2004az} & $g$\\
+$e p \to e X+c$ & ZEUS & $F^2_c$ & \cite{Adloff:1996xq,Adloff:2001zj,Breitweg:1999ad} & $g$\\
+\hline
+$e p \to e X$ & H1 & $F_L$ & \cite{Andreev:2013vha} & $g$ \\
+$e p \to e X$ & ZEUS & $F_L$ & \cite{Chekanov:2009na} & $g$\\
+\hline\hline
+$e p \to e X$ & HERA-I & NC $\sigma$&\cite{aaron:2009wt}& $g$, $q$, $\bar{q}$ \\
+$e p \to \nu X$ & HERA-I & CC $\sigma$&\cite{aaron:2009wt}& $q, \bar{q}$\\
+\hline
+$e p \to e X+c$ & HERA-I & $F_2^c$ & \cite{Abramowicz:1900rp} & $g$\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:HERA_summary}
+\caption{Summary of discussed HERA DIS measurements, arranged as in Table~\ref{tab:pp_summary}.}
+\end{table}%
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Neutrino Deep Inelastic Scattering}}\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.} &\textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$\nu(\bar{\nu})\; \mathrm{ Fe} \to \mu X$ & NuTeV & $F_2/F_3$ & \cite{Tzanov:2005kr} & $q, \bar{q}$\\
+$\nu(\bar{\nu})\; \mathrm{ Pb} \to \mu X$ & CHORUS & $F_2/F_3$ & \cite{Onengut:2005kv} & $q, \bar{q}$ \\
+\hline
+$\nu(\bar\nu)\; \mathrm{ Fe}  \to \mu^+\mu^- X$ & NuTeV/CCFR & Dimuon $\sigma$ & \cite{Goncharov:2001qe} & $s$, $\bar{s}$ \\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:NUDIS_summary}
+\caption{Summary of discussed Neutrino DIS measurements, arranged as in Table~\ref{tab:pp_summary}.}
+\end{table}%
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Drell-Yan}}\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.} &\textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$p\; \mathrm{ Cu} \to \mu^+ \mu^- $ & Fermilab E605 & $\sigma^{pp}$ & \cite{Moreno:1990sf} & $q+\bar{q}$\\
+\hline
+$p\; \mathrm{ H} \to \mu^+ \mu^- $ & NuSea/E866 & $\sigma^{pp}$ & \cite{Webb:2003bj}&  $q+\bar{q}$\\
+$p\; \mathrm{ D/H} \to \mu^+ \mu^- $ & NuSea/E866 & $\sigma^{pd}/\sigma^{pp}$ & \cite{Towell:2001nh}& $\bar{d}/\bar{u}$ \\
+\hline
+\hline
+$p\bar{p} \to e^+ e^- $ & D0 & $Z/\gamma$ $y$ & \cite{Abazov:2007jy}& $u$, $d$ \\
+$p\bar{p} \to e \nu $ & CDF & $W$ asym. & \cite{Acosta:2005ud}& $u-d$  \\
+$p\bar{p} \to \mu \nu $ & D0 & $W$ asym. & \cite{Abazov:2007pm}&  $u-d$ \\
+$p\bar{p} \to e \nu $ & D0 & $W$ asym. & \cite{Abazov:2008qv}& $u-d$  \\
+\hline
+\hline
+$pp \to l^+ l^- $ & CMS & $Z$ $p_T/y$ & \cite{Chatrchyan:2011wt}& $u + \bar{u}$, $d + \bar{d}$ \\
+$pp \to \mu^+ \mu^- $ & CMS & $Z$ $p_T/y$ & \cite{CMS-PAS-SMP-12-025,CMS-PAS-SMP-13-013}&  $u + \bar{u}$, $d + \bar{d}$\\
+$pp \to l \nu $ & CMS & $W$ asym. & \cite{Chatrchyan:2011jz}&  $u-\bar{d}$\\
+$pp \to \mu \nu $ & CMS & $W$ asym. & \cite{Chatrchyan:2012xt,Chatrchyan:2013mza} & $u-\bar{d}$ \\
+\hline
+$pp \to \mu  \nu $ & ATLAS & $W$ asym. & \cite{Aad:2011yna} &  $u-\bar{d}$\\
+$pp \to \mu  \mu $ & ATLAS & $Z/\gamma$ $p_T$. & \cite{Aad:2011gj}&  $u + \bar{u}$, $d + \bar{d}$\\
+$pp \to l  \nu $ & ATLAS & $W$ $p_T$. & \cite{Aad:2011fp} & $u+\bar{d}$, $\bar{u} + d$  \\
+\hline
+$pp \to \mu  \nu $ & LHCb & $W$ $p_T$. & \cite{Aaij:2012vn} &  $u+\bar{d}$, $\bar{u} + d$\\
+$pp \to \mu  \mu $ & LHCb & $Z/\gamma$ $p_T$. & \cite{Aaij:2012vn}& $u + \bar{u}$, $d + \bar{d}$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of discussed Drell-Yan measurements, arranged as in Table~\ref{tab:pp_summary}. Here Fixed-Target experiments are shown in the higher segment, and collider experiments in the lower two.}
+\label{tab:FTDY_summary}
+\end{table}%
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Jet Production}}\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.} &\textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$p\bar{p} \to j + X $ & CDF & Inclusive Jets & \cite{Abulencia:2007ez,Aaltonen:2008eq} & $g$\\
+$p\bar{p} \to j + X $ & D0 & Inclusive Jets & \cite{Abazov:2008ae} & $g$\\
+\hline
+$p\bar{p} \to jj + X $ & CDF & Dijets & \cite{Aaltonen:2008dn} & $g$\\
+$p\bar{p} \to jj + X $ & D0 & Dijets & \cite{Abazov:2010fr} & $g$ \\
+\hline
+\hline
+$pp \to j + X $ & LHCb & Inclusive Jets &\cite{LHCb:2011xqa} & $g$\\
+$pp \to j + X $ & ATLAS & Inclusive Jets &\cite{Aad:2010ad,Aad:2011fc,Aad:2013lpa} & $g$ \\
+$pp \to j + X $ & CMS & Inclusive Jets &\cite{CMS:2011ab,Chatrchyan:2012gwa,Chatrchyan:2012bja} & $g$ \\
+\hline
+$pp \to jj + X $ & LHCb & Dijets & \cite{LHCb:2011xqa} & $g$\\
+$pp \to jj + X $ & ATLAS & Dijets &\cite{Aad:2010ad,Aad:2011fc} & $g$\\
+$pp \to jj + X $ & CMS & Dijets & \cite{Chatrchyan:2012gwa,Chatrchyan:2012bja} & $g$\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:JET_summary}
+\caption{Summary of discussed inclusive jet and dijet measurements, arranged as in Table~\ref{tab:pp_summary}.}
+\end{table}%
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Prompt Photon}}\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.} &\textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$p\bar{p} \to \gamma X$ & UA1/UA2 & Photon $E_T$ &\cite{Albajar:1988im,Alitti:1992hn,Ansari:1988te} &$q$, $g$ \\
+$p\bar{p} \to \gamma X$ & CDF & Photon $p_T$ &\cite{Aaltonen:2009ty,Abazov:2005wc,Abe:1994rra,Acosta:2002ya,Acosta:2004bg}& $q$, $g$\\
+$p\bar{p} \to \gamma X$ & D0 & Photon $E_T$ &\cite{Abachi:1996qz,Abazov:2001af,Abbott:1999kd}& $q$, $g$\\
+\hline
+$pp \to \gamma X$ & PHENIX & Photon $p_T$ &\cite{Adler:2006yt} & $g$, $q+\bar{q}$ \\
+\hline\hline
+$pp \to \gamma X$ & ATLAS & Photon $E_T$, $\eta$ &\cite{Aad:2011tw} & $g$, $q+\bar{q}$  \\
+$pp \to \gamma X + j$ & ATLAS & Photon $E_T$, $\eta$ &\cite{Aad:2011tw} & $g$, $q + \bar{q}$ \\
+\hline
+$pp \to \gamma X$ & CMS & Photon $E_T$, $\eta$ &\cite{Chatrchyan:2011ue} & $g$, $q + \bar{q}$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of discussed isolated prompt photon measurements. The process column denotes the reaction observed in each experiment, Obs. refers to the physical observable measured and Target illustrates the most relevant partonic channels for the process and observable in question.}
+\label{tab:pp_summary}
+\end{table}%
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Top production}}\\
+\hline
+\textbf{Process} & \textbf{Experiment} & \textbf{Obs.} &\textbf{Ref.} &  \textbf{Target} \\
+\hline\hline
+$p\bar{p} \to t\bar{t}$ & CDF + D0 & $\sigma_{t\bar{t}}$&\cite{Aaltonen:2012ttbar} & $q$ + $\bar{q}$ \\
+\hline\hline
+$pp \to t\bar{t}$ & ATLAS & $\sigma_{t\bar{t}}$&\cite{ATLAS:2012jyc,ATLAS:2012fja} & $g$ \\
+$pp \to t\bar{t}$ & CMS & $\sigma_{t\bar{t}}$&\cite{Chatrchyan:2012bra,CMS:2012iba} & $g$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of discussed top production measurements, arranged as in Table~\ref{tab:pp_summary}.}
+\label{tab:ttbar_summary}
+\end{table}%
+
+
+
+\chapter{Distance Estimators}
+\label{app:distances}
+Here we define a set of useful measures in determining the statistical differences between two sets of parton distributions in a Monte Carlo representation, first introduced in Ref.~\cite{Ball:2010de}. Recalling the standard
+definitions of the central value of a Monte Carlo PDF with $N_{\text{rep}}$ replicas,
+
+\be \left< f (x,Q^2) \right> = \frac{1}{N_{\text{rep}}}\sum_i^{N_{\text{rep}}} f_k(x,Q^2), \ee
+and its associated uncertainty,
+\be \sigma^2\left[ f (x,Q^2) \right] = \frac{1}{N_{\text{rep}}-1}\sum_i^{N_{\text{rep}}} \left( f_k(x,Q^2) - \left<f(x,Q^2)\right>\right)^2.  \ee
+Further estimators are available~\cite{Beringer:1900zz} for the uncertainty upon the central value,
+\be \sigma^2\left[\left<f(x,Q^2)\right>\right] = \frac{1}{N_{\text{rep}}} \sigma^2\left[ f (x,Q^2) \right], \ee
+and the uncertainty upon the uncertainty,
+\be \sigma^2\left[\sigma^2\left[f(x,Q^2)\right]\right] = \frac{1}{N_{\text{rep}}} \left[ m_4\left[f(x,Q^2)\right] - \frac{N_{\text{rep}} - 3}{N_{\text{rep}} - 1} \left( \sigma^2\left[f(x,Q^2)\right] \right)^2 \right],\ee
+where $m_4\left[f(x,Q^2)\right]$ refers to the fourth moment of the distribution $f(x,Q^2)$.
+
+Given these quantities we can define a distance between the representation of the PDF $f$ in two PDF sets as the square difference of the PDF central values in units of the uncertainty of the mean,
+\be d^2_{\text{CV}}\left[f^{(1)},f^{(2)}\right] = \frac{\left(\left<f^{(1)}\right> - \left<f^{(2)}\right> \right)^2}
+{\sigma^2 \left[\left<f^{(1)}\right>\right] + \sigma^2 \left[\left<f^{(2)}\right>\right]},
+\label{eq:CVdistance}
+\ee
+where the PDF superscripts enumerate the PDF sets being compared and the dependence upon the kinematical variables $x,Q^2$ is implicit. With this definition of PDF distance, a value of $d^2=1$ corresponds
+to a discrepancy between PDF sets consistent with one standard deviation of the central values. A similar measure can be defined for the uncertainties of the distribution,
+\be d^2_{\sigma}\left[f^{(1)},f^{(2)}\right] = \frac{\left(\sigma^2 \left[f^{(1)}\right] - \sigma^2 \left[f^{(2)}\right] \right)^2}
+{\sigma^2 \left[\sigma^2 \left[f^{(1)}\right]\right] + \sigma^2 \left[\sigma^2 \left[f^{(2)}\right]\right]}.
+\label{eq:Vardistance}
+\ee
+These distances quantities are particularly useful in the systematic comparison of all partons in two PDF sets in order to evaluate the size and statistical significance of differences between the two sets. As an example,
+consider Figure \ref{fig:distance example} where distances are shown for both estimators $d_{\text{CV}}$ and $d_\sigma$ (i.e the square-root of Eqns.~\ref{eq:CVdistance}, \ref{eq:Vardistance}) between two PDF sets, for seven PDF combinations.
+
+A distinction should be noted between the distances presented in this work and those defined in Ref.~\cite{Ball:2010de}, where an additional bootstrap sampling of the distributions was used. In this work all distances are presented exactly as in Eqn. \ref{eq:CVdistance} and \ref{eq:Vardistance}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{7-PostLHC/figs/EVOLvs23BASIS/distances_evol.eps}
+\caption[Example plot of PDF distances.]{Example of both PDF central value and uncertainty distances for the seven PDFs parametrised at the NNPDF initial scale.}
+\label{fig:distance example}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Environment for own publications list using bibitem (Involves a global renaming of the word Bibliography).
+\cleardoublepage
+\phantomsection
+\renewcommand{\bibname}{Publications}
+\addcontentsline{toc}{chapter}{Publications}
+\begin{thebibliography}{10}
+
+%\cite{DelDebbio:2013kxa}
+\bibitem{DelDebbio:2013kxa}
+  L.~Del Debbio, N.~P.~Hartland and S.~Schumann,
+  ``MCgrid: projecting cross section calculations on grids,''
+  Comput.\ Phys.\ Commun.\  {\bf 185} (2014) 2115
+  [arXiv:1312.4460 [hep-ph]].
+  %%CITATION = ARXIV:1312.4460;%% 
+%\cite{Ball:2013hta}
+\bibitem{pub:a}
+  R.~D.~Ball {\it et al.}  [NNPDF Collaboration],
+  ``Parton distributions with QED corrections,''
+  Nucl.\ Phys.\ B {\bf 877} (2013) 2,  290
+  arXiv:1308.0598 [hep-ph].
+  %%CITATION = ARXIV:1308.0598;%%
+  %13 citations counted in INSPIRE as of 04 Dec 2013
+\bibitem{pub:b}
+  R.~D.~Ball, S.~Carrazza, L.~Del Debbio, S.~Forte, J.~Gao, N.~Hartland, J.~Huston and P.~Nadolsky {\it et al.},
+  ``Parton Distribution Benchmarking with LHC Data,''
+  JHEP {\bf 1304} (2013) 125
+  arXiv:1211.5142 [hep-ph].
+  %%CITATION = ARXIV:1211.5142;%%
+  %14 citations counted in INSPIRE as of 11 Jun 2013
+\bibitem{pub:c}
+  R.~D.~Ball, V.~Bertone, S.~Carrazza, C.~S.~Deans, L.~Del Debbio, S.~Forte, A.~Guffanti and N.~P.~Hartland {\it et al.},
+  ``Parton distributions with LHC data,''
+  Nucl.\ Phys.\ B {\bf 867} (2013) 244
+  arXiv:1207.1303 [hep-ph].
+  %%CITATION = ARXIV:1207.1303;%%
+  %36 citations counted in INSPIRE as of 11 Jun 2013
+\bibitem{pub:d}
+  R.~D.~Ball, V.~Bertone, F.~Cerutti, L.~Del Debbio, S.~Forte, A.~Guffanti, N.~P.~Hartland and J.~I.~Latorre {\it et al.},
+  ``Reweighting and Unweighting of Parton Distributions and the LHC W lepton asymmetry data,''
+  Nucl.\ Phys.\ B {\bf 855} (2012) 608
+  arXiv:1108.1758 [hep-ph].
+  %%CITATION = ARXIV:1108.1758;%%
+  %35 citations counted in INSPIRE as of 11 Jun 2013
+  \end{thebibliography}
+  
+  \cleardoublepage
+\phantomsection
+\renewcommand{\bibname}{Proceedings}
+\addcontentsline{toc}{chapter}{Proceedings}
+\begin{thebibliography}{10}
+
+\bibitem{proc:a}
+  N.~P.~Hartland and C.~S.~Deans,
+  ``Towards closure testing of parton determinations,''
+  arXiv:1307.2046 [hep-ph].
+  %%CITATION = ARXIV:1307.2046;%%
+
+\bibitem{proc:b}
+  N.~P.~Hartland and E.~R.~Nocera,
+  ``A Mathematica interface to NNPDFs,''
+  Nucl.\ Phys.\ Proc.\ Suppl.\  {\bf 234} (2013) 54
+  arXiv:1209.2585 [hep-ph].
+  %%CITATION = ARXIV:1209.2585;%%
+
+\bibitem{proc:c}
+  N.~Hartland,
+  ``LHC data and the proton strangeness,''
+  arXiv:1205.3508 [hep-ph].
+  %%CITATION = ARXIV:1205.3508;%%
+  %1 citations counted in INSPIRE as of 11 Jun 2013
+  
+\bibitem{proc:d}
+  J.~Alcaraz Maestre {\it et al.}  [SM AND NLO MULTILEG and SM MC Working Groups Collaboration],
+  %``The SM and NLO Multileg and SM MC Working Groups: Summary Report,''
+  arXiv:1203.6803 [hep-ph].
+  %%CITATION = ARXIV:1203.6803;%%
+  %33 citations counted in INSPIRE as of 11 Jun 2013
+
+%\cite{Cerutti:2011dh}
+\bibitem{Cerutti:2011dh}
+  F.~Cerutti and N.~P.~Hartland,
+  %``The NNPDF2.2 Parton Set,''
+  J.\ Phys.\ Conf.\ Ser.\  {\bf 368} (2012) 012063
+  arXiv:1111.6768 [hep-ph].
+  %%CITATION = ARXIV:1111.6768;%%
+  
+
+\end{thebibliography}
+
+
+\end{spacing}
+
+\end{document}

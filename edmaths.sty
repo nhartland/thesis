@@ -1,0 +1,287 @@
+%%  Package `edmaths' (26.8.2008)
+%%
+%%  A LaTeX 2e style file for typesetting a
+%%  PhD thesis / First-Year Report / Master thesis / Fourth-year project 
+%%  in the School of Mathematics, University of Edinburgh
+%%
+%%  By Thomas Koeppe, 2006-7
+%%
+%%
+%%  Usage:
+%%  ------
+%%  Use \documentclass{report}
+%%  and \usepackage[{phd|firstyear|y4project|...},...]{edmaths}.
+%%
+%%  Do define \title, \author, \date before loading this package!
+%%
+%%  See documentation at http://www.maths.ed.ac.uk/pg/edmaths.html
+%%
+%%
+%%  Example usage:
+%%  --------------
+%%
+%%  \documentclass[12pt,oneside]{report}
+%%  \title{Report Title}
+%%  \date{Report Date}
+%%  \author{Author Name}
+%%  \usepackage[phd,fancyhdr,hyperref,colour]{edmaths}
+%%  \flushbottom
+%%
+%%  \begin{document}
+  \pagenumbering{roman}
+%%  \maketitle
+%%
+%%  \begin{abstract} ... Abstract text ... \end{abstract}
+%%  \declaration
+%%  \dedication{...dedication text...}
+%%
+%%  \tableofcontents
+%%  \addcontentsline{toc}{chapter}{Contents}
+%%  \newpage
+%%  \pagenumbering{arabic}
+%%
+%%  [Main document body here, e.g. \chaper{...} \section{...} ... ]
+%% \bibliographystyle{h-elsevier.bst}  % Or use the `amsrefs' package (http://www.ams.org/tex/amsrefs.html)!
+%% \bibliography{bibliography file}
+%% \addcontentsline{toc}{chapter}{Bibliography}
+%% \end{document}
+%%
+%% ---------------
+
+
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{edmaths}[2007/02/05 Edinburgh maths thesis/report style v0.95]
+
+\RequirePackage{calc,ifthen,setspace,amsmath,amsthm,amscd,amssymb,graphicx,hyperref,slashed,epsf}
+\usepackage[toc]{glossaries}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up the page size and margins %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\paperheight}{297mm}    % A4 Paper
+\setlength{\paperwidth}{210mm}     %
+\setlength{\oddsidemargin}{14.6mm} %  Left/Inside: 4.0cm (rel. -1in)
+\setlength{\evensidemargin}{-.4mm} %  Right/Outside: 2.5cm (rel. -1in)
+\setlength{\topmargin}{-5.4mm}    % \
+\setlength{\headheight}{6mm}       % | Top: 2.0cm (rel. -1in), out of which 6mm for the header
+\setlength{\headsep}{6mm}          % /
+\setlength{\textheight}{297mm}     % Margins: 2cm + 4cm
+\addtolength\textheight{-80mm}     %
+\setlength{\textwidth}{145mm}      % Margins: 2.5cm + 4cm
+% Textheight delayed until we know the line spacing.
+
+% The following is removed in favour of the `report' class options "oneside/twoside".
+%\@twosidefalse \@mparswitchfalse  % Single-sided by default
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Provide some fancy option        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newboolean{with-fourier}           % Use the `fourier' package for Adobe Utopia font
+\newboolean{with-hyperref}          % Use the `hyperref' package for clickable links and bookmarks, all black
+\newboolean{with-colour}            % Add sane colours to the hyperref links
+\newboolean{with-fancyhdr}          % Use the `fancyhdr' package to provide header and footer
+
+\ifthenelse{\isundefined{\degreetext}}{\newcommand{\degreetext}{Specify a degree option!}}{}
+\ifthenelse{\isundefined{\stretchfactor}}{\newcommand{\stretchfactor}{1}}{}
+\DeclareOption{fourier}{\setboolean{with-fourier}{true}}
+\DeclareOption{hyperref}{\setboolean{with-hyperref}{true}}
+\DeclareOption{colour}{\setboolean{with-colour}{true}}
+\DeclareOption{fancyhdr}{\setboolean{with-fancyhdr}{true}}
+
+\DeclareOption{phd}{\renewcommand{\degreetext}{Doctor of Philosophy}}
+\DeclareOption{firstyear}{\renewcommand{\degreetext}{First-Year Report\\Graduate School of Mathematics}}
+\DeclareOption{secondyear}{\renewcommand{\degreetext}{Second-Year Report\\Graduate School of Mathematics}}
+\DeclareOption{thirdyear}{\renewcommand{\degreetext}{Third-Year Report\\Graduate School of Mathematics}}
+\DeclareOption{y4project}{\renewcommand{\degreetext}{Year 4 Project\\School of Mathematics}}
+\DeclareOption{masterph}{\renewcommand{\degreetext}{Master of Philosophy}}
+\DeclareOption{mastersc}{\renewcommand{\degreetext}{Master of Science by Research}}
+
+\DeclareOption{single}{\renewcommand{\stretchfactor}{1}}
+\DeclareOption{onehalf}{\renewcommand{\stretchfactor}{1.5}}
+\DeclareOption{double}{\renewcommand{\stretchfactor}{2}}
+
+%\DeclareOption{oneside}{\@twosidefalse \@mparswitchfalse}  % Single-sided by default
+%\DeclareOption{twosides}{\@twosidetrue \@mparswitchtrue}
+
+\ProcessOptions
+
+\ifthenelse{\boolean{with-fourier}}
+  { \RequirePackage{cmap}
+    \RequirePackage{fourier}
+    \RequirePackage[T1]{fontenc}
+    \RequirePackage{microtype}
+  } {}
+
+\ifthenelse{\boolean{with-hyperref}}
+  {
+    \RequirePackage[dvipsnames]{xcolor}
+    \RequirePackage[pdftitle={\@title}, pdfauthor={\@author}, pdfcreator={PDFLaTeX with edmaths}, pdfpagelayout=OneColumn, colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+  \ifthenelse{\boolean{with-colour}}
+    {
+      \hypersetup{linkcolor=Sepia, urlcolor=NavyBlue, citecolor=Sepia}
+    } {}
+  } {}
+
+\ifthenelse{\boolean{with-fancyhdr}}
+  {
+    \RequirePackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+%    \fancyhead[RO,LE]{\thepage}
+%    \fancyfoot[RO,LE]{\thepage}
+%    \fancyhead[LO]{\it\@title}
+%    \fancyhead[RE]{\@author}
+%    \fancyfoot[RE,LO]{}
+     \fancyhead[R]{\thepage}
+     \fancyhead[L]{\nouppercase \rightmark}
+     \fancyfoot[C]{\thepage}
+  } {}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Make the title page etc          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \singlespacing
+    \addtolength{\oddsidemargin}{-0.75cm}
+    \begin{center}
+    \null\vskip 4.1cm
+    \begin{minipage}[t][7.6cm]{10.5cm}
+      \begin{center}
+      {\LARGE\textbf{\@title}\par} \vspace{0.8cm}
+      {\Large\textit{\@author}\par}
+      \end{center}
+    \end{minipage}
+             \vspace{-2.8cm}
+    \begin{center}
+    \includegraphics[width=50mm]{logo.png} \vspace{0.6cm}
+    \end{center}
+    \vfill
+    {\Large\degreetext \par University of Edinburgh \par\@date \par}
+    \end{center}
+  \end{titlepage}
+  \if@twoside
+    \thispagestyle{empty}
+    \cleardoublepage
+  \else
+    \addtocounter{page}{1}
+  \fi
+}
+
+\newcommand{\declaration}{%
+  \chapter*{Declaration}
+  \begin{spacing}{1.5}
+ This thesis is the sole work of myself, and is a record of work performed as part of the NNPDF collaboration,
+ and a separate collaboration with Steffen Schumann and my supervisor Luigi Del Debbio. Unless explicitly stated, the results presented in this thesis are either mine,
+ or the product of collaboration in which I have made a significant contribution.
+  \vskip10pt
+\noindent In chapters \ref{ch:LHCtools} and \ref{ch:LHCimpact} the presented results are based upon work published in 
+  \begin{itemize}
+  
+    \item  R.~D.~Ball {\it et al.},
+  %``Reweighting and Unweighting of Parton Distributions and the LHC W lepton asymmetry data,''
+  Nucl.\ Phys.\ B {\bf 855} (2012) 608
+  [arXiv:1108.1758 [hep-ph]].
+  %%CITATION = ARXIV:1108.1758;%%
+  %59 citations counted in INSPIRE as of 19 Jun 2014
+  
+ \item  L.~Del Debbio {\it et al.},
+  %``MCgrid: projecting cross section calculations on grids,''
+  Comput.\ Phys.\ Commun.\  {\bf 185} (2014) 2115
+  [arXiv:1312.4460].
+  %%CITATION = ARXIV:1312.4460;%%
+  
+  \item R.~D.~Ball {\it et al.},
+  %``Parton Distribution Benchmarking with LHC Data,''
+  JHEP {\bf 1304} (2013) 125
+  [arXiv:1211.5142 [hep-ph]].
+  %%CITATION = ARXIV:1211.5142;%%
+  %47 citations counted in INSPIRE as of 19 Jun 2014
+  
+  \item  R.~D.~Ball {\it et al.},
+  %``Parton distributions with LHC data,''
+  Nucl.\ Phys.\ B {\bf 867} (2013) 244
+  [arXiv:1207.1303 [hep-ph]].
+  %%CITATION = ARXIV:1207.1303;%%
+  %155 citations counted in INSPIRE as of 19 Jun 2014
+  \end{itemize}
+  \vskip10pt
+\noindent The discussion in Chapter \ref{ch:LHClight} includes results published in 
+  \begin{itemize}
+    \item  N.~P.~Hartland  {\it et al.},
+  %``Towards closure testing of parton determinations,''
+  PoS DIS {\bf 2013} (2013) 043
+  [arXiv:1307.2046 [hep-ph]].
+  %%CITATION = ARXIV:1307.2046;%%
+  %1 citations counted in INSPIRE as of 19 Jun 2014
+  \end{itemize}
+  \vskip10pt
+  \noindent My work presented in this thesis has not been used as the basis of any other professional qualification or degree.
+  
+  \end{spacing}
+\vskip30pt
+\hfill\makebox[1.4in]{\hrulefill} \newline
+  {\raggedleft\vspace{2cm}\textit{\bf{\@author}}
+
+  }
+}
+
+\newcommand{\acknowledgements}{%
+  \chapter*{Acknowledgements}
+  \begin{spacing}{1.5}
+After almost four years of studying in Edinburgh I find that there are many people I would like to thank for 
+making my time here so memorable. First and foremost I would like to thank my supervisor Luigi Del Debbio
+for his advice and expertise, along with his encouragement and interest in my progress as physicist. I wouldn't
+have made it this far without his guidance and direction.
+
+For providing such a great environment in which to learn, I'd like to thank the staff of the Edinburgh PPT group.
+Particular thanks go to Richard Ball, Arjun Berera, Einan Gardi, and Brian Pendleton for their consistently useful advice, for which I am greatly
+appreciative. Special thanks go to my fellow students, without whom the experience wouldn't have been anywhere near as interesting.
+I'd particularly like to thank the students of the 2010 contingent, Ashley Cooke, Tom Metcalf and Samuel Abreu for their
+companionship and humour. Outside of the Edinburgh physics group, I'd like to thank Xin He and James Kelly for many long
+and interesting discussions.
+
+During my PhD I've had the pleasure of working within the NNPDF collaboration. From the collaboration I have received
+an incredible amount of support, learnt a great deal, and made many good friends. Special thanks go to Chris Deans who shared
+the experience with me as an NNPDF student in Edinburgh.
+
+During my third year, Steffen Schumann provided me with the opportunity to work and study at the University
+of G\"ottingen, where I gained valuable experience outside the main topic of my PhD. I'm very grateful for the opportunity, and I'd like to thank
+Steffen, along with Erik Gerwick, for making the visit such a welcoming and enjoyable experience. 
+
+For providing me with the chance to study at Edinburgh and G\"ottingen, thanks go to the STFC and the MCnet initial training network for their
+financial support.
+
+Finally, thanks go to my girlfriend Sophie, and my family, particularly my parents who have supported me throughout my life and studies so far. This thesis is dedicated to them.
+
+  \end{spacing}
+
+}
+
+\renewenvironment{abstract}{\chapter*{\abstractname}}{\addcontentsline{toc}{chapter}{\abstractname}}
+
+\newcommand{\dedication}[1]{%
+  \clearpage
+  \thispagestyle{plain}
+  \vspace*{7cm}
+  \begin{center}
+    \Large\it #1
+  \end{center}
+}
+
+%% A special declaration for Year 4 reports
+\newcommand{\yfourdeclaration}[1]{%
+ \vfill
+ \noindent
+ This project report is submitted in partial fulfilment of the requirements for the degree of
+ \textit{#1}.
+}
