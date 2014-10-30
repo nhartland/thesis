@@ -216,7 +216,7 @@ where once again the $D$ represent the experimental data points. This method of 
 
 The typical method employed to avoid the d'Agostini bias proceeds by including the normalisation as a fitted parameter and penalising large deviations as shown in Eqn. \ref{eq:MSTWchi2}. This procedure largely corrects for the problem, although when applied to a dataset with several different normalisation uncertainties it still suffers from a bias. This effect was demonstrated by the NNPDF collaboration in Ref.~\cite{Ball:2009qv}.  The bias can be avoided by using the so-called $t_0$ prescription~\cite{Ball:2009qv} for defining the covariance matrix. In this method the covariance matrix is constructed using the predictions from a previous fit rather than the experimental data values, to multiply with the multiplicative uncertainties.
 \be
-\label{eq:covmat}
+\label{eq:covmat_t0}
 \mathrm{Cov}^{t_0}[i,j]=
 \delta_{ij}\; \sigma^{\mathrm{unc}}_{i}\sigma^{\mathrm{unc}}_{j} + 
 \sum_{k=1}^{N_{\mathrm{add}}}\sigma^{\mathrm{add}}_{i,k}\sigma^{\mathrm{add}}_{j,k}

@@ -20,11 +20,11 @@ alongside the original Monte Carlo procedure~\cite{Giele:1998gw} and then subseq
 
 Given a probability distribution for PDFs, Bayes' theorem suggests that we can update the experimental information in an existing PDF fit, here denoted $\mathcal{P}(f)$ by determining the conditional probability of the PDF given the new dataset ${y}$,  
 \begin{equation}
-  {\mathcal P}(f|y) \mathcal Df  =  \frac{{\mathcal P}(y|f)}{{\mathcal P}(y)} \, {\mathcal P}(f) \mathcal Df\, .   \label{eq:3}
+  {\mathcal P}(f|y) \mathcal Df  =  \frac{{\mathcal P}(y|f)}{{\mathcal P}(y)} \, {\mathcal P}(f) \mathcal Df\, .   \label{eq:bayes2}
 \end{equation}
 However it was noted in Ref.~\cite{Ball:2010gb} that the probability of a PDF given the new data is not strictly what a fitting procedure would obtain. Rather the fitting procedure aims to find the probability distribution of the PDFs given some measure of fit quality to the new data, e.g $\chi^2$. Therefore to obtain a distribution statistically equivalent to a refit, one should attempt to determine
 \begin{equation}
-  \label{eq:3}
+  \label{eq:bayes3}
   {\mathcal P}(f|\chi) \mathcal Df =  \frac{{\mathcal P}(\chi |f)}{{\mathcal P}(\chi)} \, {\mathcal P}(f) \mathcal Df\, ,
 \end{equation}
 where $\mathcal{P}(\chi)$ may be marginalised over to obtain the correct normalisation for ${\mathcal P}(f|\chi)$. Armed with such a distribution, we may then compute our predictions for a general observable given the information contained in the new dataset,
@@ -159,7 +159,7 @@ Similar methods to what we have discussed for fast PDF evolution have also been 
 a full calculation is given by a double convolution over two parton densities,
 \be  \sigma_{pp\to X} = \left( \frac{\alpha_s(Q^2)}{2\pi} \right)^{p} \int dx_1\, dx_2\,  f_i(x_1,Q^2)\; d\hat{\sigma}_{ij\to X}\; f_j(x_2,Q^2) \, . \label{eq:hadconv} \ee
 The double convolution can once again be avoided by inserting interpolated versions of the PDFs, and performing the convolution over the interpolating functions.
-\be  \sigma_{pp\to X} = \left( \frac{\alpha_s(Q^2)}{2\pi} \right)^{p} \sum_{\alpha,\beta}^{N_X}  f_i(x_\alpha,Q^2)\; W_{\alpha\beta,ij}\; f_j(x_\beta,Q^2) \, . \label{eq:hadconv} \ee
+\be  \sigma_{pp\to X} = \left( \frac{\alpha_s(Q^2)}{2\pi} \right)^{p} \sum_{\alpha,\beta}^{N_X}  f_i(x_\alpha,Q^2)\; W_{\alpha\beta,ij}\; f_j(x_\beta,Q^2) \, . \label{eq:hadconv2} \ee
 The weight grid $W$ is calculated analogously to the evolution tables in Eqn.~\ref{eq:evolfactors},
 \be W_{\alpha\beta,ij} =  \int dx_1\, dx_2\,  \mathcal{I}^{(\alpha)}(x_1)\; d\hat{\sigma}_{ij\to X}\; \mathcal{I}^{(\beta)}(x_2) \, . \ee
 Identical methods can be used to interpolate over the hard scale $Q^2$ in multi-scale processes. These techniques are used in publicly available tools such as { \tt APPLgrid}~\cite{Carli:2010rw} and { \tt FastNLO}~\cite{Kluge:2006xs}. In the { \tt APPLgrid} framework, the full product used to calculate a hadronic observable is
@@ -181,7 +181,7 @@ The { \tt APPLgrid}/{ \tt FastNLO} approach maintains a great deal of flexibilit
 
 Recalling the fast PDF evolution method in Eqn.~\ref{eq:fastPDFfinal} with the suitable grids precomputed, PDF evolution can be performed simply as  
 \be
-f_i(x_{\alpha},Q^2_\tau) = \sum_{k}^{n_f} \sum_\beta^{N_x} A^\tau_{\alpha\beta ik}\; f_k(x_\beta,Q^2_0). \label{eq:fastPDFfinal}
+f_i(x_{\alpha},Q^2_\tau) = \sum_{k}^{n_f} \sum_\beta^{N_x} A^\tau_{\alpha\beta ik}\; f_k(x_\beta,Q^2_0). \label{eq:fastPDFfinal_recalled}
 \ee 
 The evolution of the { \tt APPLgrid} subprocess in Eqn.~\ref{eq:APPLsubproc} from an initial state distribution is therefore
 \ba F^{(s)}\left(x_{\alpha}, x_{\beta},  Q^2_{\tau}\right) &=&  \sum_{i,j}^{13} \sum_{k,l}^{n_f}  \sum_{\delta,\gamma}^{N_x} C^{(s)}_{ij}  \left[  A^\tau_{\alpha\delta ik}\; f_k(x_\delta,Q^2_0) A^\tau_{\beta\gamma jl}\; f_l(x_\gamma,Q^2_0) \right]\;\;\; \\
