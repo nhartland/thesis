@@ -26,9 +26,9 @@ In addition to the large datasets available from fixed target experiments, HERA 
 
 HERA measurements from the two collaborations have been examined as a combined analysis and dataset, so far resulting in two studies of direct interest to PDF determination; a combination of HERA-1 inclusive DIS data~\cite{aaron:2009wt}, and of charm production cross-sections~\cite{Abramowicz:1900rp}.
 
-\begin{figure}[ht]
+\begin{figure}[ht!]
 \centering
-\includegraphics[width=0.8\textwidth]{3-PDFdet/figs/d12-172f3.pdf}
+\includegraphics[width=0.9\textwidth]{3-PDFdet/figs/d12-172f3.pdf}
 \caption[Combined reduced charm cross-section data from HERA]{Reduced charm cross-section data from the HERA combined measurement. Data from the measurements contained in the combination analysis is shown for comparison. Figure from \cite{Abramowicz:1900rp}.}
 \label{fig:HERAF2c}
 \end{figure}
@@ -48,15 +48,15 @@ and for the $F_3$ structure function,
 \ea
 A simultaneous fit of these data points therefore provides a good handle upon the valence quark distributions $q-\bar{q}$. These datasets are relatively precise; however they are subject to potentially large nuclear corrections which introduce an uncertainty that is poorly understood.
 
-\begin{figure}[ht]
+Neutrino DIS becomes particularly valuable for PDF determination when considering the semi-inclusive DIS dimuon production process $\nu N \to \mu\mu X$ illustrated in Figure \ref{fig:dimuon}. In this process the contribution from initial state strangeness is Cabbibo favoured, therefore providing a direct handle on the strange distribution whose contribution is ordinarily difficult to discern from total structure function measurements. Measurements of this process are therefore commonly used as a strangeness probe, and data has been provided by the NuTeV/CCFR collaborations~\cite{Goncharov:2001qe}.
+%
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{3-PDFdet/figs/dimuon.pdf}
 \caption[Leading order diagram for dimuon production in neutrino DIS]{Leading order diagram for dimuon production in neutrino DIS.}
 \label{fig:dimuon}
 \end{figure}
-
-Neutrino DIS becomes particularly valuable for PDF determination when considering the semi-inclusive DIS dimuon production process $\nu N \to \mu\mu X$ illustrated in Figure \ref{fig:dimuon}. In this process the contribution from initial state strangeness is Cabbibo favoured, therefore providing a direct handle on the strange distribution whose contribution is ordinarily difficult to discern from total structure function measurements. Measurements of this process are therefore commonly used as a strangeness probe, and data has been provided by the NuTeV/CCFR collaborations~\cite{Goncharov:2001qe}.
-
+%
 \subsubsection{Fixed-target and collider Drell-Yan}
 After DIS measurements, the production of electroweak vector bosons in hadronic collisions provides the next most important contribution to the constraint of parton densities, with precise predictions available at NNLO in QCD~\cite{Anastasiou:2003ds,Catani:2009sm,Catani:2010en}.  At leading order the neutral current Drell-Yan process is moderated by the PDF combination
 		\be q(x_1)\bar{q}(x_2) +  \bar{q}(x_1)q(x_2),\ee
@@ -165,6 +165,7 @@ Due to the redundant parametrisation provided by the neural networks, there is a
 \mathrm{sea}\; \mathrm{asymmetry}\quad\quad &\Delta &\equiv  \bar{d}-\bar{u},\nonumber \\
 \text{strange sea/valence}\quad\quad &s\pm &\equiv  s \pm \bar{s}.
 \ea
+\clearpage
 The equivalent functional forms for the fitting in terms of the Neural Networks are;
 \ba \Sigma(x,Q_0^2)&=&x^{-\alpha_\Sigma}(1-x)^{\beta_\Sigma} \mathrm{NN}_\Sigma(x), \nonumber  \\
 V(x,Q_0^2)&=&A_V x^{-\alpha_V} (1-x)^{\beta_V} \mathrm{NN}_V(x),\nonumber \\
@@ -175,11 +176,9 @@ s^+(x,Q_0^2)&=&x^{-\alpha_{s^+}} (1-x)^{\beta_{s^+}}\mathrm{NN}_{s^+}(x),\nonumb
 s^-(x,Q_0^2)&=&x^{-\alpha_{s^-}}(1-x)^{\beta_{s^-}} \mathrm{NN}_{s^-}(x) - s_{\mathrm{aux}}(x,Q_0^2), \label{eq:NNPDF23param}
 \ea
 where the NN denote the 2-5-3-1 neural network parametrisations and the $A$ are set by enforcing the appropriate sum rules. In the NNPDF approach the treatment of the limiting exponents $\alpha$, $\beta$ is rather different. These factors are introduced in order to speed up the convergence of the neural network fitting, with the intention of providing a rough preprocessing function as a backbone for the neural networks to deviate from, and ensuring that the functions have the correct behaviour under integration. These exponents are therefore randomised within an optimised range at the start of the fit and are not modified by the fitting procedure. The final results should therefore be reasonably independent of the preprocessing factor and of the coefficients involved. 
-
+\\
 While determinations with fixed parametrisations typically design the strange valence functional form such that the strange valence sum rule is automatically satisfied, this cannot be done with a neural net parametrisation. In the determinations up to NNPDF2.3 the strange auxiliary term $s_{\mathrm{aux}}(x,Q_0^2)$ in Eqn.~\ref{eq:NNPDF23param} is therefore introduced to ensure the strange valence sum rule is followed, and has the form~\cite{Ball:2009mk}:
 \be s_{\mathrm{aux}}(x,Q_0^2) = A_{s^-}(x^{r}(1-x))^s.\ee
-
-
 \subsection{Fit quality and minimisation}
 With an experimental dataset selected and a choice made for the parametrisation of the PDFs, the optimal fit should be determined by varying fit parameters and attempting to minimise some measure of fit quality. Different groups make quite different choices not only in the minimisation method but also in the measure used to determine fit quality. The most general statement that can be made is that the global fit quality (generally denoted $\chi^2$) is built from the quality of fit to individual datasets as
 
@@ -187,7 +186,6 @@ With an experimental dataset selected and a choice made for the parametrisation 
 for a fit with $n$ data sets, each with a consistent normalisation. In the NNPDF approach the full covariance matrix of the data is used in determining the quality of fit, including all appropriate correlations within and between datasets. The $\chi^2$ measure for a set of data with common correlations is then given by
 \be \chi^2_k=\sum_{i,j=1}^{N_{\mathrm{dat}}}\frac{(D_{k,i}-T_{k,i})(D_{k,j}-T_{k,j})}{\mathrm{Cov}[i,j]}.\ee
 Here the $T$ are the theoretical predictions for the experimental data points $D$ calculated from the neural network parametrisation, and $\mathrm{Cov}[i,j]$ is the covariance between data points $i$ and $j$. In practice there is a ensemble of neural networks each associated with a single Monte Carlo sample of the experimental data, for the purposes of error propagation. This point will be discussed in more detail later in the chapter.  In NNPDF determinations the full experimental correlations should be available for a dataset to be included into the determination.
-
 Other groups take a different strategy, often with the suggestion that correlation effects are small to negligible with the exception of overall normalisations. Adopting the same practice as earlier MRST fits, the MSTW2008 fit uses an uncorrelated $\chi^2$ measure over much of its dataset~\cite{Martin:2009iq}, with the normalisation of the theory predictions set by a fitted parameter $\mathcal{N}$
 \be \chi^2_k=\sum_{i=1}^{N_{\mathrm{dat}}} \frac{(D_{k,i}-T_{k,i}/\mathcal{N}_k)^2}{\mathrm{Var}[i]} + \left(\frac{1-\mathcal{N}_k}{\sigma_k^{\mathcal{N}}}\right)^4, \label{eq:MSTWchi2}\ee 
 where the final quartic penalty is intended to prevent the normalisation deviating too far from the experimental normalisation uncertainty $\sigma_{\mathcal{N}}$, and the variance $\mathrm{Var}[i]$ is constructed by the sum in quadrature of the statistical and uncorrelated systematic errors. The CT series of fits utilise a $\chi^2$ measure that includes systematic uncertainties in terms of explicit shifts~\cite{Stump:2001gu,Pumplin:2002vw}. In this arrangement, the fit quality measure is given by
@@ -239,14 +237,14 @@ In the NNPDF case the minimisation is complicated by the very large number of pa
 
 In addition to the basic difficulty of minimisation in a large parameter space, there is a further issue that arises when considering the fitting of a function with a great deal of redundant flexibility. Because of the flexibility of the parametrisation, it is possible that training the neural networks so that each reaches the global minimum in the error function actually results in the networks fitting to statistical noise. This effect is known as \emph{overlearning} and is a problem often encountered in the training of large neural networks~\cite{bishopnn,nnoverlearn}. In previous NNPDF determinations, the widely used \emph{cross-validation} technique~\cite{Ball:2010de,bishopnn} was employed in order to identify when overlearning occurred. 
 
-In this method the experimental data set is split into two separate sets. The first, a fitting set which is used for the minimisation of the error function, and a second validation set which is not used directly in the fitting procedure. For each iteration in the genetic algorithm minimisation the error function is computed between the neural network predictions and both data sets. In the early stages of the training both error functions should decrease. However in the latter stages of the training where statistical noise begins to become an important contribution, the goodness-of-fit calculated to the fitting data set may continue to decrease while the same value calculated to the validation set has stopped decreasing or even begun to increase. This is a clear signal of overlearning, where fitting to statistical noise in the fitting set means that the fit to the validation set is no longer improving. At this stage the training of the neural networks is stopped. A typical signal of overlearning in a cross-validated fit can be seen in Figure~\ref{fig:crossval} which compares the fit quality for both the training and validated sets over a number of fit iterations.
-
-\begin{figure}[ht]
+\begin{figure}[t!]
 \centering
 \includegraphics[scale=0.5]{3-PDFdet/figs/chi2ite-1004-NMC-pd.pdf}
 \caption[Demonstration of overlearning in the cross-validation of a neural network fit]{A typical signal of overlearning in a neural network fit. E$_{\mathrm{tr}}$ and E$_{\mathrm{val}}$ represent the training and validation figures of merit respectively. As the number of genetic algorithm generations proceeds, eventually the network begins to fit statistical noise in the training set and the validation fit quality begins to decrease. Figure from~\cite{Ball:2010de}.}
 \label{fig:crossval}
 \end{figure}
+
+In this method the experimental data set is split into two separate sets. The first, a fitting set which is used for the minimisation of the error function, and a second validation set which is not used directly in the fitting procedure. For each iteration in the genetic algorithm minimisation the error function is computed between the neural network predictions and both data sets. In the early stages of the training both error functions should decrease. However in the latter stages of the training where statistical noise begins to become an important contribution, the goodness-of-fit calculated to the fitting data set may continue to decrease while the same value calculated to the validation set has stopped decreasing or even begun to increase. This is a clear signal of overlearning, where fitting to statistical noise in the fitting set means that the fit to the validation set is no longer improving. At this stage the training of the neural networks is stopped. A typical signal of overlearning in a cross-validated fit can be seen in Figure~\ref{fig:crossval} which compares the fit quality for both the training and validated sets over a number of fit iterations.
 
 \subsection{Error propagation}
 \label{sec:errors}

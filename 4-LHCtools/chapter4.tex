@@ -90,8 +90,7 @@ However in practice a number of unweighted replicas of the order of the number o
 
 \subsection{Reweighting validation}
 The Bayesian reweighting procedure has been extensively validated by the NNPDF collaboration in a number of highly non-trivial tests of the methodology. As the method has been designed to update a prior distribution with new information analogously to the approach used in an ideal fit, the first test is to ensure that a PDF set reweighted with a new dataset is statistically equivalent to a new set refitted from scratch utilising the new data. This was first performed in~\cite{Ball:2010gb} by reweighting an NNPDF 2.0 fit which included only DIS and Drell-Yan data with information from Tevatron inclusive jet measurements. The reweighted set was compared to the full NNPDF 2.0 fit including the data. As Figure~\ref{fig:rwvalid} demonstrates, the reweighted set is able to reproduce the refitted set up to the level of statistical fluctuation.
-
-
+\clearpage
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.45\textwidth]{4-LHCtools/figs/jets-t0-xg_Q2_2_lin.pdf}
@@ -102,7 +101,7 @@ The Bayesian reweighting procedure has been extensively validated by the NNPDF c
 
 The development of the unweighting method as outlined in the previous section, allowed for further tests of the reweighting method. A series of tests were carried out in order to assess the behaviour of PDFs under successive reweighting operations.
 
-When attempting to include multiple datasets into a PDF fit via reweighting, there are three possibilities. One can reweight with the combined $\chi^2$ values for the two experiments, or one can reweight first with one experiment, unweight the PDF ensemble, then reweight with the second. The resulting PDFs should be reasonably independent of the method chosen, and of the order in which the successive reweighting is performed. This requirement is a stringent test of the Monte Carlo PDF representation, as it determines whether or not the ensemble truly behaves as a probability distribution. More pragmatically, the test verifies whether the loss of ensemble efficiency in one reweighting operation is not so great as to prevent a further reweighing. This investigation was carried out in Ref.~\cite{Ball:2011gg} with a DIS only prior. The E605 Drell-Yan experiment and CDF/D0 inclusive jet measurements were included into this set by reweighting. As the E605 experiment provides global fits with rather stringent constraints compared to the moderate effect of the jet data, this is a rather asymmetrical and therefore effective test.
+When including multiple datasets into a PDF fit via reweighting, there are three possibilities. One can reweight with the combined $\chi^2$ values for the two experiments, or reweight first with one experiment, unweight the PDF ensemble, then reweight with the second. The resulting PDFs should be reasonably independent of the method chosen, and of the order in which the successive reweighting is performed. This requirement is a stringent test of the Monte Carlo PDF representation, as it determines whether or not the ensemble truly behaves as a probability distribution. More pragmatically, the test verifies whether the loss of ensemble efficiency in one reweighting operation is not so great as to prevent a further reweighing. This investigation was carried out in Ref.~\cite{Ball:2011gg} with a DIS only prior. The E605 Drell-Yan experiment and CDF/D0 inclusive jet measurements were included into this set by reweighting. As the E605 experiment provides global fits with rather stringent constraints compared to the moderate effect of the jet data, this is a rather asymmetrical and therefore effective test.
 
 
 
@@ -227,8 +226,8 @@ The procedure outlined above for generating {\tt FK} tables from { \tt APPLgrid}
 \end{center}
 \label{tab:FKtimings}
 \end{table}
-
-In Table~\ref{tab:FKtimings} a good speed improvement is evident for the example single-scaled process of $W^+$ production, and a very significant improvement on the multi-scale jet production observable. It is important to note that these figures were obtained via convolutions with LHAPDF parton densities, and in a PDF fit a considerably greater speed advantage is gained via the {\tt FK} procedure as no additional operation is required to evolve the PDFs.
+\clearpage
+In Table~\ref{tab:FKtimings} a reasonable speed improvement is evident for the example single-scaled process of $W^+$ production, and a very significant improvement on the multi-scale jet production observable. It is important to note that these figures were obtained via convolutions with LHAPDF parton densities, and in a PDF fit a considerably greater speed advantage is gained via the {\tt FK} procedure as no additional operation is required to evolve the PDFs.
 
 While for most applications, the original { \tt APPLgrid} convolution speed is more than sufficient, these speed improvements make the inclusion of a large LHC dataset possible, rather than prohibitively expensive in the NNPDF methodology. For example, in a typical NNPDF fit of 20,000 genetic algorithm generations, including a 100 datapoint jet dataset via the { \tt APPLgrid} interface would add several days of additional computer time to each individual replica fit. With the {\tt FK} procedure this additional cost is reduced to minutes.
 
@@ -360,10 +359,8 @@ The terms $B$, $V$, $I$ and $RS$ refer to the Born (B), Virtual (V), Integrated 
   \, \nonumber 
 \end{eqnarray}
 in which the weight $w^{(0)}$ arises through the usual Born-like PDF dependance, and the weights $w^{(1/2)}$ arise from integration over parton-$x$ from the first or second parton in the initial state splitting. To reweight such events these weights must therefore be properly distinguished
-in the event record. While is is not the case in the standard {\tt HepMC} layout, a format based upon {\tt ROOT NTuples} was designed by the {\tt BlackHat-Sherpa} group for the reweighting of NLO event weights~\cite{Bern:2013zja}. In the {\tt BlackHat NTuple} format the weights that must be distinguished for the accurate treatment of scale variations are also stored.  
-
+in the event record. While is is not the case in the standard {\tt HepMC} layout, a format based upon {\tt ROOT NTuples} was designed by the {\tt BlackHat-Sherpa} group for the reweighting of NLO event weights~\cite{Bern:2013zja}. In the {\tt BlackHat NTuple} format the weights that must be distinguished for the accurate treatment of scale variations are also stored.  \\
 While the event reweighting approach is considerably faster than an entire rerun of the Monte Carlo, a reweight of a full event sample can still take a considerable amount of computer time. The key issue being that the statistical accuracy of the calculation is limited by the number of events in the sample, and therefore for a more accurate calculation, more computational expense is incurred. This dependence on the event loop is not removed by the event reweighting procedure. The dependance can however be removed by applying the interpolation methods of the previous section, by providing an interface for event generators to interpolating packages such as { \tt APPLgrid}.
-
 \subsection{An interpolation interface for automated NLO} 
 \label{sec:interp}
 The {\tt MCgrid} project began as a direct interface for the {\tt SHERPA} event generator framework to the {\tt APPLgrid} interpolation package. The development of a new interface between an event generator and the {\tt APPLgrid} framework in principle requires the implementation of an analysis suite to provide the categorisation of event final states into appropriate observable bins. However the {\tt MCgrid} interface is built upon standard analysis tools and formats to provide a more general interface between standards-compliant Catani-Seymour event generators to the {\tt APPLgrid} package.
@@ -389,12 +386,12 @@ where $N_{l}$ is the number of events falling into the initial state subprocess 
 
 In this way the fully exclusive predictions given in a typical Monte Carlo event generator may be effectively converted into the relevant subprocess basis. With this accomplished, and the correct weight conversion performed according to the exact PDF dependance of the Catani-Seymour counterterms, the weights may be filled directly into an APPLgrid type weight grid. Figure~\ref{fig:MCgridreps} demonstrates the application of the {\tt MCgrid} package when used in conjunction with {\tt Sherpa} and {\tt BlackHat} as a one-loop generator. The tools are applied to the test cases of Drell-Yan and inclusive jet production, with the resulting { \tt APPLgrid} applied to the estimation of scale and $\alpha_S$ uncertainties alongside standard PDF error, requiring a very large number of replicas.
 
-\begin{figure}[ht]
+The {\tt MCgrid} project is publicly available\footnote{The software is available at \emph{http://mcgrid.hepforge.org}.}, and allows for the first time calculations from automated NLO event generators to be interfaced to interpolation tools, for potential application in PDF fits, or indeed fast parameter variation studies in phenomenological applications.
+
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.48\textwidth]{4-LHCtools/figs/100MDYReplicas_Scales.pdf}
 \includegraphics[width=0.48\textwidth]{4-LHCtools/figs/JetsAlphas_0.pdf}
 \caption[An example of the output of the {\tt MCgrid} package]{An example of the output of the {\tt MCgrid} package. A $Z$ boson rapidity distribution plot is shown on the left, with scale error estimation. The plot on the right demonstrates the grids applied to inclusive jet data, with $\alpha_S$ error estimation. Both plots are normalised to their central values, to demonstrate the level of uncertainty.}
 \label{fig:MCgridreps}
 \end{figure}
-
-The {\tt MCgrid} project is publicly available\footnote{The software is available at \emph{http://mcgrid.hepforge.org}.}, and allows for the first time calculations from automated NLO event generators to be interfaced to interpolation tools, for potential application in PDF fits, or indeed fast parameter variation studies in phenomenological applications.

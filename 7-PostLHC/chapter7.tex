@@ -19,7 +19,10 @@ Closure tests in the NNPDF methodology can be performed in a number of ways. One
 Alternatively one may perform a fit where statistical noise is introduced to the pseudo-dataset according to the experimental uncertainty present in the real dataset. This can be done in two ways; either the noise is introduced directly to the pseudo-data itself whereby all Monte Carlo replicas fit to the same noisy sample, or noise is introduced on a replica-by-replica basis as in the normal Monte Carlo procedure. These types of fit we denote \emph{level one} closure tests.
 
 Finally one can introduce two levels of noise to the data. The first; applied directly to the pseudo-data, simulates the experimental noise in the distributions. The second level is introduced through the normal Monte Carlo generation of artificial data replicas. This is denoted a \emph{level two} closure test and is the closest to a full fledged PDF fit. The main exception here being the lack of any inconsistency between datasets, as they have all been generated from the same initial distribution. In the case of a level two fit the PDF fitter wishes to reproduce the underlying law to within their quoted PDF uncertainties, the exact reproduction available at level zero is now unavailable due to the introduced pseudo-experimental noise. The level two fit is therefore the most stringent test of a fitting procedure in that it tests the central claim of a fitting group; that the underlying law should lie within the quoted PDF uncertainty band at the quoted confidence level. The settings used in the different closure tests are summarised in Table~\ref{tab:closurelevel}. As a direct comparison of some example pseudodata, Figure~\ref{fig:closurepseudodata} shows example data at closure test levels zero, one and two.
-\begin{table}[htdp]
+
+The new structure present in the {\tt nnpdf++} code, particularly the modular treatment of experimental data and theoretical predictions, allows for the straightforward use of predictions in the place of experimental data while keeping the experimental covariance matrices intact. The closure testing method has therefore been extensively applied to the development of the NNPDF methodology, with the procedure used for the NNPDF3.0 determination being guided largely by results from closure testing. Here we shall outline some general results, before demonstrating the application of the procedure to methodological development in the subsequent sections.
+
+\begin{table}[h!]
 \label{tab:closurelevel}
 \begin{center}
 \begin{tabular}{|c|c|c|}
@@ -35,14 +38,13 @@ C.~Level & Exp.~Noise & Art.~Data\\ \hline
 \end{center}
 \end{table}%
 
-\begin{figure}[ht]
+\begin{figure}[hp]
 \centering
 \includegraphics[width=0.9\textwidth]{7-PostLHC/figs/Closuretest_levels/closuretest_levels.pdf}
 \caption[Closure test pseudodata example]{Examples of pseudodata used in a closure test for all three levels. The black circles show the level zero pseudodata, and the experimental error bars. The blue squares show the pseudodata after experimental noise has been simulated (level one) and the red diamonds after both statistical noise simulation and Monte Carlo replica generation (level two). All points are normalised to the generating PDF set (NNPDF2.3).}
 \label{fig:closurepseudodata}
 \end{figure}
-
-The new structure present in the {\tt nnpdf++} code, particularly the modular treatment of experimental data and theoretical predictions, allows for the straightforward use of predictions in the place of experimental data while keeping the experimental covariance matrices intact. The closure testing method has therefore been extensively applied to the development of the NNPDF methodology, with the procedure used for the NNPDF3.0 determination being guided largely by results from closure testing. Here we shall outline some general results, before demonstrating the application of the procedure to methodological development in the subsequent sections.
+\clearpage
 
 \subsubsection{Early closure tests}
 The earliest NNPDF closure tests were conducted to assess the usefulness of the procedure, and performed with the full NNPDF2.3 procedure. As an initial test, a fit was performed to the toy PDF parametrisation as used in the Les Houches evolution benchmarks~\cite{Giele:2002hx}, a parametrisation based upon the CTEQ5M determination~\cite{Lai:1999wy}. In this set, the initial state distributions are given as
@@ -64,7 +66,14 @@ The earliest NNPDF closure tests were conducted to assess the usefulness of the 
 \end{eqnarray}
 where $u_v$ and $d_v$ refer to the up and down valence distributions respectively. Predictions for the NNPDF2.3 dataset were made according to these distributions, and used in the place of experimental data. Experimental noise was simulated in the pseudodata by application of the same procedure used to provide artificial data replicas. The full NNPDF2.3 procedure including Monte Carlo artificial replicas was then applied to the dataset, the resulting PDF set therefore being a level two type closure test where the generating PDF set should be recovered by the fit within the estimated uncertainties.
 
-\begin{figure}[ht]
+Figure~\ref{fig:LHtoyclosure1} displays the results of the level two closure test fit with the Les Houches toy PDFs used as a generating function. The result demonstrates impressive agreement, with the NNPDF2.3 methodology able to accommodate the predictions of the Les Houches toy generating function despite it deviating significantly from the standard NNPDF2.3 result. For all four PDF combinations shown, the results of the closure test maintain distances of less than one standard deviation to the generating function across a wide kinematic range. Of additional interest are the strange distributions, relatively poorly constrainted by the data included in the pseudo-dataset. The strange valence in particular is set to zero in the Les Houches toy. Figure~\ref{fig:LHtoyclosure2} shows the results from the closure test for both the total strangeness and strange valence distributions, the NNPDF methodology is able to clearly reproduce the underlying law within uncertainties in both cases, and is able to comfortably resolve a zero strange valence contribution.
+
+The results are particularly impressive considering that this is a test of a methodology that has not been previously verified by closure test. The example case of a pseudo-dataset generated according to the Les Houches toy PDF is however a rather simplified case, and methodological refinements can be made by examining closure tests with greater structure in the generating function.
+
+A good level of agreement can also be found at the level of the $\chi^2$ to both the pseudodata sample, and the real experimental data. In Figure~\ref{fig:CPPclosurechi2} we compare the fit quality of a closure test and its generating PDF dataset by dataset by presenting the $\chi^2$ to each measurement from both the closure test result and the generating PDF. In this case the generating function has considerably greater complexity, being an early {\tt nnpdf++} test fit with most of the NNPDF methodology in place. While agreement is generally very good, especially on the level of total $\chi^2$; we begin to see some elements of discrepancy in datasets sensitive to flavour separation and strangeness such as the NuTeV dataset and electroweak vector boson production data. Such discrepancies can help in pinpointing areas where further development is needed.
+
+\clearpage
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.48\textwidth]{7-PostLHC/figs/gluon.pdf}
 \includegraphics[width=0.48\textwidth]{7-PostLHC/figs/singlet.pdf}\\
@@ -73,21 +82,14 @@ where $u_v$ and $d_v$ refer to the up and down valence distributions respectivel
 \caption[PDFs obtained through a Closure test fit with toy PDFs as a generating function]{PDFs obtained through a closure test fit with Les Houches toy PDFs as a generating function, displayed as a ratio to the generating function. Shown are the distributions for the gluon, singlet, valence and triplet PDFs. In green are the results obtained through the closure test, and the red curves show the standard NNPDF2.3 result.}
 \label{fig:LHtoyclosure1}
 \end{figure}
-
-Figure~\ref{fig:LHtoyclosure1} displays the results of the level two closure test fit with the Les Houches toy PDFs used as a generating function. The result demonstrates impressive agreement, with the NNPDF2.3 methodology able to accommodate the predictions of the Les Houches toy generating function despite it deviating significantly from the standard NNPDF2.3 result. For all four PDF combinations shown, the results of the closure test maintain distances of less than one standard deviation to the generating function across a wide kinematic range. Of additional interest are the strange distributions, relatively poorly constrainted by the data included in the pseudo-dataset. The strange valence in particular is set to zero in the Les Houches toy. Figure~\ref{fig:LHtoyclosure2} shows the results from the closure test for both the total strangeness and strange valence distributions, the NNPDF methodology is able to clearly reproduce the underlying law within uncertainties in both cases, and is able to comfortably resolve a zero strange valence contribution.
-
-\begin{figure}[ht]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.48\textwidth]{7-PostLHC/figs/strangesea.pdf}
 \includegraphics[width=0.48\textwidth]{7-PostLHC/figs/c1_n64.pdf}
 \caption[Strange PDFs obtained through a Closure test fit with toy PDFs as a generating function]{Strange sea (left) and valence (right) PDFs obtained through a closure test fit with Les Houches toy PDFs as a generating function. The strange sea is presented as a ratio to the LH toy PDF, and the strange valence is presented directly as the PDF, with the (zero) LH toy line shown.}
 \label{fig:LHtoyclosure2}
 \end{figure}
-
-The results are particularly impressive considering that this is a test of a methodology that has not been previously verified by closure test. The example case of a pseudo-dataset generated according to the Les Houches toy PDF is however a rather simplified case, and methodological refinements can be made by examining closure tests with greater structure in the generating function.
-
-A good level of agreement can also be found at the level of the $\chi^2$ to both the pseudodata sample, and the real experimental data. In Figure~\ref{fig:CPPclosurechi2} we compare the fit quality of a closure test and its generating PDF dataset by dataset by presenting the $\chi^2$ to each measurement from both the closure test result and the generating PDF. In this case the generating function has considerably greater complexity, being an early {\tt nnpdf++} test fit with most of the NNPDF methodology in place. While agreement is generally very good, especially on the level of total $\chi^2$; we begin to see some elements of discrepancy in datasets sensitive to flavour separation and strangeness such as the NuTeV dataset and electroweak vector boson production data. Such discrepancies can help in pinpointing areas where further development is needed.
-
+\clearpage
 
 \begin{figure}[!]
 \centering
@@ -117,7 +119,6 @@ To improve the minimisation performance, hampered by ill-suited preprocessing, N
 \item \textbf{Singlet and gluon PDFs}\\
 Exponent randomisation ranges are set to be twice the $1\sigma$ interval of the previous iteration's effective exponents
 at the asymptotic points.
-\clearpage
 \item \textbf{Nonsinglet PDF combinations}\\
 The low-$x$ randomisation interval is set to be the maximal extent of two effective exponent ranges; twice the $1\sigma$ interval at the asymptotic point and twice the $1\sigma$ interval at the point $x=1\times 10^{-3}$. The high-$x$ interval is set identically as with the singlet and gluon.
 \end{itemize} 
@@ -355,7 +356,7 @@ Looking firstly at the gluon and singlet sectors, in Figure~\ref{fig:23vs30metho
 
 To investigate the impact of the methodological changes to PDFs sensitive to the valence distributions and quark flavour separation, we plot the valence and triplet PDF combinations in Figure~\ref{fig:23vs30methodology_2}. In the valence PDF comparison, we see a similar pattern as for the singlet and gluon PDFs, where the low-$x$ result from the NNPDF3.0 methodology fit obtained a narrower distribution, and at high-$x$ the uncertainties are systematically larger. The triplet PDF shows by some way the largest differences between the two methodologies, with PDF uncertainties being significantly larger across the whole range of $x$. This effect is largely due to the much more flexible preprocessing used for the triplet PDF, where now there is no requirement that the PDF be preprocessed to zero at low-$x$, the constraint now being entirely based on experimental data. Such a treatment leads to a rather conservative determination of the low-$x$ triplet, however this effect should be at least partially offset by increased data constraints in the full NNPDF3.0 determination.
 
-Here we have seen that the results of the two methodologies provide consistent results when applied to the same experimental dataset. However there are significant changes in the fit results due to methodological improvements, particularly important in the PDF extrapolation regions at large and small values of parton-$x$, and for PDF combinations sensitive to light flavour separation. As has been shown in the validation with closure tests, the methodological modifications, particularly in allowing for greater preprocessing flexibility, result in an improved reproduction of a test PDF distribution. The upgraded methodology should therefore provide a more reliable estimate of the parton densities in the proton.
+Here we have seen the two methodologies provide consistent results when applied to the same experimental dataset. However there are significant changes in the fit results due to methodological improvements, particularly important in the PDF extrapolation regions at large and small values of parton-$x$, and for PDF combinations sensitive to light flavour separation. As has been shown in the validation with closure tests, the methodological modifications, particularly in allowing for greater preprocessing flexibility, result in an improved reproduction of a test PDF distribution. The upgraded methodology should therefore provide a more reliable estimate of the parton densities of the proton.
 
 \clearpage
 \begin{figure}[!]

@@ -1,11 +1,9 @@
 \chapter{\label{chapter1} Parton distribution functions} 
-
 Parton distributions are one of the central pillars of perturbative QCD, factorising as they do the perturbatively incalculable long distance dynamics present in calculations involving hadronic initial states. Combined with
 the perturbative description of the short-distance cross-section what could seem at first a hopeless situation is alleviated, and QCD becomes a predictive and useful theory when applied to hadronic scattering.
 
 In this chapter a brief overview of how parton distribution functions arise in QCD calculations will be presented.
-We shall explore the prototypical example of the deep inelastic scattering (DIS) of leptons off a hadronic target, first in the \emph{naive parton model} arising before the advent of QCD and
-then with the QCD-improved parton model which allows for an excellent description of DIS measurements across a wide range of hard scales.
+We shall explore the prototypical example of the deep inelastic scattering (DIS) of leptons off a hadronic target, first in the \emph{naive parton model} arising before the advent of QCD and then with the QCD-improved parton model which allows for an excellent description of DIS measurements across a wide range of hard scales.
 
 The treatment of heavy quarks in parton distributions is a particularly delicate issue and therefore will
 also be discussed in this introductory theory section. Finally there will be some exploration of the general properties of parton distributions in order to provide a summary of the available theoretical constraints upon PDFs.
@@ -23,6 +21,7 @@ not survive the scattering process and fragments into an arbitrary hadronic fina
 \caption{Deep inelastic scattering of a charged lepton with a proton target.}
 \label{fig:DIS}
 \end{figure}
+
 In this system we can define the standard DIS kinematic variables;  $Q^2$ denotes the momentum transfer from the electron to the target proton, $\nu$ the energy transfer and $y$ the measure of the reaction's inelasticity, or fractional energy transfer. In the rest frame of the proton these are given by
 \begin{eqnarray}
  Q^2 &=& -q^2 = -(k - k^{\prime})^2, \\
@@ -33,7 +32,6 @@ where $M$ refers to the mass of the proton, and the inelasticity ranges between 
 \be x = \frac{Q^2}{2\nu}. \ee
 Neglecting spin labels, the amplitude for this diagram in the Feynman gauge is given by
 \be\mathcal{M} = ie^2\bar{u}(k^\prime)\gamma^\mu u(k)\left( i\frac{g_{\mu\nu}}{Q^2} \right)\left<X\right|J_h^\nu\left|P\right>,  \label{eq:DISme}\ee
-%
 where $J_h^\nu$ represents the hadronic current. 
 The fundamental difficulty in attempting to compute the cross section for this process is our ignorance of the wavefunction for the hadronic states $\left|X\right>$ and $\left|P\right>$. To isolate the problem, we are able to factorise the spin averaged square of the amplitude in Equation \ref{eq:DISme} into a leptonic ($L_{\mu\nu}$) and a hadronic ($W^{\mu\nu}$) part
 \be |\overline{\mathcal M}|^2 = \frac{1}{Q^2} L_{\mu\nu}W^{\mu\nu}, \ee
@@ -61,7 +59,6 @@ The parton model approximation states that for a sufficiently hard interaction, 
 \be \left| \vcenter{\hbox{\includegraphics[height=2cm]{2-PDFs/figs/convolution1.pdf}}} \right|^2= \sum_i^{N_{part}}f_i(\xi,Q^2) \otimes \left| \vcenter{\hbox{\includegraphics[height=2cm]{2-PDFs/figs/convolution2.pdf}}}\right|^2(\xi), \nonumber\ee
 where we have introduced the multiplicative convolution
 \be (f \otimes g )(x) = \int_0^1\; \frac{d\xi}{\xi}\; f\left(\frac{\xi}{x}\right) g(\xi).\ee
-
 The hadronic tensor is then given in terms of a sum of individual hard scattering partonic tensors, denoted  $\widetilde{W}^i_{\mu\nu}(\xi)$ for a target parton of type $i$. Writing the hadronic tensor as the probabilistic sum over all constituent parton types we obtain
 \be W_{\mu\nu} =\int_0^1 \frac{d\xi}{\xi} \sum_i f_i(\xi,Q^2)\; \widetilde{W}^i_{\mu\nu}(\xi,Q^2). \label{eq:htensorexpan}\ee
 As the parton level tensors must obey the same conservation relations as the full hadronic tensor, we can once again form a general parameterization of $\widetilde{W}^i_{\mu\nu}$:
@@ -89,7 +86,7 @@ We may therefore write the full EM proton structure functions in the naive parto
 These results have a number of important features. Firstly in this model the structure functions have no dependence upon the resolution parameter $Q^2$, a phenomenon known as Bjorken scaling~\cite{Bjorken:1968dy}. This scaling effect was an important achievement of the original parton model, as it was able to describe contemporary experimental results rather well. The lack of any scale dependence in the structure functions is a consequence of the model's assumptions treating interactions with the proton's constituent partons as point like, and consequently having no characteristic length scale.
 
 Secondly we note that $F_2(x) = 2xF_1(x)$, which is known as the Callan-Gross relation~\cite{callangross}. It illustrates a fundamental property of spin-1/2 particles, that they are unable to absorb a longitudinally polarised photon~\cite{pQCDhandbook}.
-
+%
 \section{QCD and the parton model}
 The naive parton model was able to provide a good phenomenological description of early DIS measurements. Its success also provided great support for QCD as the correct description of the strong interaction. The phenomenon of Bjorken scaling placed substantial constraints upon the theory governing the internal dynamics of the proton. The asymptotic freedom of QCD allows for a consistent description of Bjorken-scaling, where the constituents of the hadron can be viewed as independent, non-interacting point like particles at high  values of the resolution parameter $Q^2$. The partons in Feynman's model were therefore quickly associated with the quarks and gluons of QCD.
 \begin{figure}[t]
@@ -141,7 +138,6 @@ Unlike the divergent part, the regular part of the counter-term is not uniquely 
  F_2(x,Q^2) = 2 \int_0^1 \xi d\xi \sum_i  f^{\mathrm{DIS}}_i(\xi) e_{i}^2.
 \ee
 In practice this scheme choice is often rather unhelpful, as it does not permit a consistent definition of PDFs across multiple processes. With this in mind, the most common choice is the \emph{Modified Minimal Subtraction} or $\overline{\mathrm{MS}}$ scheme where the only regular counterterms are a process independent $\Delta^{(1)}_{r,ij} = \log 4\pi - \gamma_E$. In the $\overline{\mathrm{MS}}$ scheme therefore our factorised PDFs are given by
-
 \be 
 f_i(x,\mu_F^2) = f_i(x) + \frac{\alpha_S}{2\pi} \sum_j  \left[\left(P_{ij}\left(x\right)\log\frac{\mu_F^2}{\kappa^2} + \log 4\pi - \gamma_E \right) \right] \otimes f_j(x) + \mathcal{O}(\alpha_S^2), \label{eq:renormpdf}
 \ee
@@ -151,9 +147,8 @@ F_2(x,Q^2) = x \sum_i e_i^2 \left\{ f_i(x,\mu_F^2) +  \frac{\alpha_S}{2\pi}\int_
  \ee
 where the $\widetilde{W}_i$ are the finite contributions remaining after factorisation. While the relationship between the PDFs at the factorisation scale and the bare distributions is now divergent, the renormalised quantities may be measured at some scale and used in subsequent calculations, thus making the theory predictive. In general, under a universal factorisation scheme such as $\overline{\mathrm{MS}}$, structure functions may be calculated as 
 \be F(x,Q^2) = \sum_i \int_x^1 \frac{d\xi}{\xi} C_i\left(\frac{x}{\xi},\frac{Q^2}{\mu_F^2}, \alpha_S \right) f_i(\xi,\mu_F^2), \label{eq:DISsf} \ee
-where the $C_i$ are the finite Wilson coefficients determined perturbatively and the PDFs $f_i$ encode the non-perturbative structure of the calculation. This differs from the naive parton model in that the Bjorken-scaling is now broken by logarithms of the hard scale $Q^2$, and the sum over parton species not only runs over spin-$1/2$ partons (the quarks of QCD), but also contains a contribution from an initial state gluon splitting into a quark-antiquark pair.
-\subsection{DGLAP and PDF evolution} \label{sec:DGLAP}
-As a measurable quantity, the structure function itself clearly must be independent of the unphysical factorisation scheme and scale choices. The requirement of scheme independence is of course met when the factorisation scheme is followed consistently for the definition of PDFs and Wilson coefficients in all subsequent calculations. The requirement of factorisation scale independence leads to a renormalisation group equation (RGE) for the structure function
+where the $C_i$ are the finite Wilson coefficients determined perturbatively and the PDFs $f_i$ encode the non-perturbative structure of the calculation. This differs from the naive parton model in that the Bjorken-scaling is now broken by logarithms of the hard scale $Q^2$, and the sum over parton species not only runs over spin-$1/2$ partons (the quarks of QCD), but also contains a contribution from an initial state gluon splitting into a quark-antiquark pair. 
+\subsection{DGLAP and PDF evolution} \label{sec:DGLAP} As a measurable quantity, the structure function itself clearly must be independent of the unphysical factorisation scheme and scale choices. The requirement of scheme independence is of course met when the factorisation scheme is followed consistently for the definition of PDFs and Wilson coefficients in all subsequent calculations. The requirement of factorisation scale independence leads to a renormalisation group equation (RGE) for the structure function
 \be \mu_F \frac{d}{d\mu_F} F(x,Q^2) = 0,\ee
 and consequently RGEs for the parton distributions and Wilson coefficients, once again in terms of the Altarelli-Parisi splitting functions $P_{ij}$
 \be \mu_F \frac{d}{d\mu_F}f_i(y,\mu_F^2) = \sum_j \int_z^1 \frac{dz}{z} P_{ij}\left(\frac{y}{z},\alpha_S \right) f_j(z,\mu_F^2), \label{eq:DGLAP}\ee
@@ -184,7 +179,7 @@ These equations may be solved for a PDF at some scale $Q^2$ evolved from an init
 whereby the multiplicative convolution present in equations \ref{eq:NSDGLAP}, \ref{eq:gSDGLAP} is reduced to a product in Mellin space; the method employed by QCD-Pegasus~\cite{Vogt:2004ns}. In the Mellin space approach, the emphasis largely lies on a fast numerical implementation of the Mellin inversion integral.
 
 Through either method, the solution of the DGLAP equations provides a perturbative description of the behaviour of parton distributions as they vary in scale. However we remain short of a full description of the distributions having not determined their dependence upon the momentum fraction $x$. Furthermore the precise behaviour of the PDF and structure function renormalisation may be complicated in the attempt to overcome some of the approximations we have made so far regarding the masses of quarks contributing to our parton model, which we shall address here before discussing how the $x$ behaviour of the PDFs may be elucidated.
-
+\clearpage
 \section{Treatment of heavy quarks}
 So far in our discussion of the QCD parton model we have made the assumption that all the quarks contributing in the theory are massless, an approximation that becomes increasingly untenable when investigating scattering processes with a hard scale approaching a quark's physical mass. A careful treatment of terms depending on quark masses is therefore vital for making theoretical predictions to a dataset that spans heavy quark mass thresholds. 
 
@@ -196,7 +191,6 @@ The space of heavy quark renormalisation schemes is bounded by two regimes where
 We consider first the kinematical regime where the hard scale of our scattering problem is of similar order or smaller than our heavy quark mass; $Q^2 \lesssim m_h^2$. Making the assumption that the initial state proton has no intrinsic heavy quark component it is reasonable to treat the heavy quark as a purely final state particle, and the only partons in the theory are the $n_l$ light quark flavours and the gluon. In this instance, setting the factorisation and renormalisation scales $\mu_F^2=\mu_R^2 = \mu^2$; the calculation of a structure function in Eqn.~\ref{eq:DISsf} takes the form
 \be F(n_l, Q^2, m_h^2) = \sum_i^{n_l}  C_i\left(n_l, \frac{Q^2}{m_h^2}, \frac{\mu^2}{m_h^2}, \frac{Q^2}{\mu^2} \right) \otimes f_i(n_l, \mu^2), \label{eq:FFN} \ee
 where the sum is over light quark flavours only and the full mass dependence of the heavy quark is intact in the calculation. The structure function can be separated into a contribution where only light flavours are present, $F^{L}$, and a contribution including the heavy flavour $F^{H}$ as,
-
 \be F(n_l, Q^2, m_h^2) = F^{L}(n_l, Q^2) + F^{H}(n_l, Q^2,m_h^2), \ee
 where
 \ba
@@ -223,7 +217,6 @@ In this instance the heavy quark contribution to the structure function first ar
 
 In the ZM-VFNS the heavy quark PDFs are set to zero below mass threshold and evolved as a massless parton according to the DGLAP equations for scales greater than the heavy quark mass. While this method alleviates the difficulties present in the FFN scheme at large scales, its treatment of heavy quarks only in terms of massless partons completely ignores the massive contributions to the Wilson coefficients and is therefore no longer exact. The reliability of the ZM scheme is therefore particularly reduced in the region where powers of $m_h^2/Q^2$ are significant. 
 \subsection{General mass schemes}
-
 Analyses of QCD measurements are often performed by making a choice between using a suitable FFN scheme at scales in the region of heavy quark mass thresholds or a ZM scheme at high scales where the associated powers of $m_h^2/Q^2$ can be safely neglected. In either case the treatment of heavy quarks is at least unambiguous, with the ZM approach yielding a simpler procedure as there is no requirement to calculate coefficient functions with the heavy quark masses intact.
 
 For analyses of a large dataset, potentially spanning several heavy quark thresholds and extending to very high scales, the desire to improve the perturbative reliability of the calculations has led to the development of a number of hybrid or \emph{general mass} schemes. In such schemes the treatments generally reduce to the FFN regime at low scales and the ZM treatment at high scales, with the intermediate regime handled via some interpolation between the two. Generally in a Variable Flavour Number (VFN) scheme one requires that
@@ -256,10 +249,9 @@ where the GM superscript has been omitted, the new superscript specifying the or
 The earliest complete description of a GM-VFNS was provided by the ACOT method~\cite{Collins:1978wz} which ensures the continuity of physical quantities through Eqn.~\ref{eq:minimalGM}, but does not attempt to take advantage of the degeneracy in the GM-VFN procedure. An important result was achieved with the Simplified-ACOT or S-ACOT  scheme~\cite{Collins:1998rz,Kramer:2000hn} which was able to exploit this ambiguity to considerably simplify the calculation of physical observables. In the S-ACOT scheme it was noted that shifts of the Wilson coefficients by their zero-mass limits may be absorbed into a redefinition of the GM-VFNS. That is, terms such as
 \be C_h(n_l+1, m_h) - C_h(n_l+1, 0),\ee
 vanish in the limit $Q^2 \gg m_h^2$, and therefore do not spoil the interpolation between the FFN and ZM schemes. This leads to the option of shifting to a simpler scheme where the massive heavy quark initiated coefficients may instead be evaluated with the heavy quark mass set to zero. Other options for the scheme definition were explored by Thorne and Roberts in the TR type schemes~\cite{Thorne:1997uu,Thorne:1997ga}, with the additional constraint that scale derivatives of heavy flavour structure functions should also be continuous at the matching scale.
-
-
+%
 \subsubsection{The FONLL approach}
-
+%
 A more recent approach was developed by examining methods previously used to combine fixed order calculations with next-to-leading log resummation via the FONLL method~\cite{Cacciari:1998it}. The method was extended from the original application of studying the \pt spectrum in heavy flavour hadroproduction to the treatment of heavy quarks in DIS by Forte \emph{et al.}~\cite{Forte:2010ta}. The procedure begins by inverting the relationship in Eqn.~\ref{eq:FLVreln} so as to express an $n_l$ flavour structure function in terms of $n_l+1$ flavour PDFs,
 \be F(n_l,Q^2) = \sum_i^{n_l} B_i\left(\frac{Q^2}{m_h^2}\right)\otimes f_i(n_l+1,Q^2), \label{eq:FONLLmassive}\ee
 where it is important to note that the sum over flavours does not include the heavy flavour PDF, and the full heavy quark mass dependence is present in the coefficients $B$. To perform a matching with the massless scheme, the ZM result in Eqn.~\ref{eq:ZMVFN} can be expressed in terms of light flavour PDFs only, given the assumption that the heavy flavour PDF is generated perturbatively. In this case, Eqn.~\ref{eq:ZMVFN} can be written
@@ -275,9 +267,9 @@ F^{\mathrm{FONLL}}(Q^2) =\left[ F(n_l,Q^2) + F(n_l+1, Q^2) \right] - \overline{F
 With the subtraction ensuring the cancellation of terms which are double counted between the massive and massless calculations. Therefore in this expression the mass-suppressed terms present in the FFN calculation are fully accounted for in the GM scheme, with the duplicate terms subtracted. The simplicity of this approach helped to elucidate many of the differences between general mass schemes.
 
 It should be noted that while general mass schemes suffer from an ambiguity in their definition compared to the simpler fixed-flavour and zero mass schemes, the differences between them are always of higher order compared to the calculation at hand, as is the case in any true scheme choice. Indeed, a well-defined GM-VFNS will always reduce to the decoupled result at low scales and the zero-mass result at scales much higher than the quark mass, behaving effectively as a tower of fixed flavour schemes with increasing number of partonic quarks. The general-mass schemes therefore do not suffer from a significant loss of predictive power, and are able to provide considerable improvement over the simpler schemes when dealing with datasets spanning quark mass thresholds.
-
+%
 \section{General features of parton distributions}
-
+%
 While we have now described how the parton distributions functions at an experimental scale $Q^2$ may be found by evolving parton distributions from an initial scale, and discussed briefly how the renormalisation of heavy quark distributions may be accomplished, the issue of determining the functional dependence of the parton distributions upon the momentum fraction $x$ at some initial scale $f_i(x,Q_0^2)$ remains. 
 
 The number of independent PDFs to be determined is dependent upon the choice of initial scale, as quark distributions that can be considered \emph{heavy} with respect to $Q^2_0$ may be generated perturbatively through the DGLAP procedure outlined previously. The typical choice is to determine the parton distributions at some scale $ m_s^2< Q^2_0 \le m_c^2$ such that the flavours $c$, $b$, $t$ are produced by evolution. These scale choices minimise the number of distributions to be determined while remaining perturbatively reliable.
@@ -301,6 +293,3 @@ From these rules we may infer additional constraints upon individual PDFs. The M
 In these expressions, the parameters $\alpha$ and $\beta$ control the small and large-$x$ PDF behaviour respectively. The $\beta$ should be such that the PDFs tend to zero smoothly at large-$x$, and the $\alpha$ such that the valence distributions are integrable, and the first moment of the gluon and singlet are integrable. The overall PDF normalisations $N$ being constrained via the appropriate sum rules.
 
 Finally, what remains in the determination of the distributions are the remainder terms $r(x)$ which describe the PDFs between the two $x$-limits. Their determination is considerably more complex and is a ongoing source of research. Much of this thesis will be dedicated to discussing the determination of these remainder functions.
-
-
-
