@@ -1,0 +1,1496 @@
+\begin{thebibliography}{100}
+
+\bibitem{feynman1}
+R.P. Feynman.
+\newblock {\em Photon hadron interactions}.
+\newblock W.A. Benjamin, New York, 1972.
+
+\bibitem{Feynmanparton}
+R.P. Feynman.
+\newblock The behaviour of hadron collisions at extreme energies.
+\newblock In C.~N Yang, editor, {\em Stony Brook 1969, Proceedings, Conference
+  On High Energy Collisions}, pages 237--258, 1969.
+
+\bibitem{feynmanparton2}
+R.P. Feynman.
+\newblock Very high-energy collision of hadrons.
+\newblock {\em Phys. Rev. Lett.}, 23:1415--1417, 1969.
+
+\bibitem{Bjorken:1968dy}
+J.D. Bjorken.
+\newblock {Asymptotic Sum Rules at Infinite Momentum}.
+\newblock {\em Phys.Rev.}, 179:1547--1553, 1969.
+
+\bibitem{callangross}
+D~Callan, C~Gross.
+\newblock {\em Phys. Rev. Lett.}, 22:156, 1969.
+
+\bibitem{pQCDhandbook}
+G~Sterman et~al.
+\newblock Handbook of perturbative qcd.
+\newblock {\em Rev. Mod. Phys.}, 67(1):157--248, January 1995.
+
+\bibitem{Aid:1996au}
+S.~Aid et~al.
+\newblock {A Measurement and QCD analysis of the proton structure function f2
+  (x, q**2) at HERA}.
+\newblock {\em Nucl.Phys.}, B470:3--40, 1996, hep-ex/9603004.
+
+\bibitem{Gross:1973ju}
+D.J. Gross and Frank Wilczek.
+\newblock {Asymptotically Free Gauge Theories. 1}.
+\newblock {\em Phys.Rev.}, D8:3633--3652, 1973.
+
+\bibitem{Georgi:1951sr}
+Howard Georgi and H.~David Politzer.
+\newblock {Electroproduction scaling in an asymptotically free theory of strong
+  interactions}.
+\newblock {\em Phys.Rev.}, D9:416--420, 1974.
+
+\bibitem{Floratos:1977au}
+E.G. Floratos, D.A. Ross, and Christopher~T. Sachrajda.
+\newblock {Higher Order Effects in Asymptotically Free Gauge Theories: The
+  Anomalous Dimensions of Wilson Operators}.
+\newblock {\em Nucl.Phys.}, B129:66--88, 1977.
+
+\bibitem{Altarelli:1977zs}
+Guido Altarelli and G.~Parisi.
+\newblock {Asymptotic Freedom in Parton Language}.
+\newblock {\em Nucl.Phys.}, B126:298, 1977.
+
+\bibitem{GonzalezArroyo:1979df}
+Antonio Gonzalez-Arroyo, C.~Lopez, and F.J. Yndurain.
+\newblock {Second Order Contributions to the Structure Functions in Deep
+  Inelastic Scattering. 1. Theoretical Calculations}.
+\newblock {\em Nucl.Phys.}, B153:161--186, 1979.
+
+\bibitem{Floratos:1978ny}
+E.G. Floratos, D.A. Ross, and Christopher~T. Sachrajda.
+\newblock {Higher Order Effects in Asymptotically Free Gauge Theories. 2.
+  Flavor Singlet Wilson Operators and Coefficient Functions}.
+\newblock {\em Nucl.Phys.}, B152:493, 1979.
+
+\bibitem{Furmanski:1980cm}
+W.~Furmanski and R.~Petronzio.
+\newblock {Singlet Parton Densities Beyond Leading Order}.
+\newblock {\em Phys.Lett.}, B97:437, 1980.
+
+\bibitem{Curci:1980uw}
+G.~Curci, W.~Furmanski, and R.~Petronzio.
+\newblock {Evolution of Parton Densities Beyond Leading Order: The Nonsinglet
+  Case}.
+\newblock {\em Nucl.Phys.}, B175:27, 1980.
+
+\bibitem{GonzalezArroyo:1979he}
+Antonio Gonzalez-Arroyo and C.~Lopez.
+\newblock {Second Order Contributions to the Structure Functions in Deep
+  Inelastic Scattering. 3. The Singlet Case}.
+\newblock {\em Nucl.Phys.}, B166:429, 1980.
+
+\bibitem{Floratos:1981hs}
+E.G. Floratos, C.~Kounnas, and R.~Lacaze.
+\newblock {Higher Order QCD Effects in Inclusive Annihilation and Deep
+  Inelastic Scattering}.
+\newblock {\em Nucl.Phys.}, B192:417, 1981.
+
+\bibitem{Hamberg:1991qt}
+R.~Hamberg and W.L. van Neerven.
+\newblock {The Correct renormalization of the gluon operator in a covariant
+  gauge}.
+\newblock {\em Nucl.Phys.}, B379:143--171, 1992.
+
+\bibitem{Moch:2004pa}
+S.~Moch, J.A.M. Vermaseren, and A.~Vogt.
+\newblock {The Three loop splitting functions in QCD: The Nonsinglet case}.
+\newblock {\em Nucl.Phys.}, B688:101--134, 2004, hep-ph/0403192.
+
+\bibitem{Vogt:2004mw}
+A.~Vogt, S.~Moch, and J.A.M. Vermaseren.
+\newblock {The Three-loop splitting functions in QCD: The Singlet case}.
+\newblock {\em Nucl.Phys.}, B691:129--181, 2004, hep-ph/0404111.
+
+\bibitem{Altarelli:1978id}
+Guido Altarelli, R.~Keith Ellis, and G.~Martinelli.
+\newblock {Leptoproduction and Drell-Yan Processes Beyond the Leading
+  Approximation in Chromodynamics}.
+\newblock {\em Nucl. Phys.}, B143:521, 1978.
+
+\bibitem{AP}
+G.~Altarelli, G.~Parisi.
+\newblock {\em Nucl. Phys. B}, 20:28, 1977.
+
+\bibitem{dokshitzer}
+Y.L Dokshitzer.
+\newblock {\em Sov. Phys.}, 46:641, 1977.
+
+\bibitem{gribovlipatov}
+L.N. Gribov, V.N~Lipatov.
+\newblock {\em Sov. J. Nucl. Phys.}, 15:438, 1972.
+
+\bibitem{lipatov}
+L.N. Lipatov.
+\newblock {\em Sov. J. Nucl. Phys.}, 20:94, 1975.
+
+\bibitem{Salam:2008qg}
+Gavin~P. Salam and Juan Rojo.
+\newblock {A Higher Order Perturbative Parton Evolution Toolkit (HOPPET)}.
+\newblock {\em Comput. Phys. Commun.}, 180:120--156, 2009, 0804.3755.
+
+\bibitem{Botje:2010ay}
+M.~Botje.
+\newblock {QCDNUM: Fast QCD Evolution and Convolution}.
+\newblock {\em Comput.Phys.Commun.}, 182:490--532, 2011, 1005.1481.
+
+\bibitem{Bertone:2013vaa}
+Valerio Bertone, Stefano Carrazza, and Juan Rojo.
+\newblock {APFEL: A PDF Evolution Library with QED corrections}.
+\newblock 2013, 1310.1394.
+
+\bibitem{Vogt:2004ns}
+A.~Vogt.
+\newblock {Efficient evolution of unpolarized and polarized parton
+  distributions with QCD-PEGASUS}.
+\newblock {\em Comput. Phys. Commun.}, 170:65--92, 2005, hep-ph/0408244.
+
+\bibitem{Tung:2006tb}
+W.K. Tung, H.L. Lai, A.~Belyaev, J.~Pumplin, D.~Stump, et~al.
+\newblock {Heavy Quark Mass Effects in Deep Inelastic Scattering and Global QCD
+  Analysis}.
+\newblock {\em JHEP}, 0702:053, 2007, hep-ph/0611254.
+
+\bibitem{Buza:1995ie}
+M.~Buza, Y.~Matiounine, J.~Smith, R.~Migneron, and W.L. van Neerven.
+\newblock {Heavy quark coefficient functions at asymptotic values Q**2 $\gg$
+  m**2}.
+\newblock {\em Nucl.Phys.}, B472:611--658, 1996, hep-ph/9601302.
+
+\bibitem{Buza:1996wv}
+M.~Buza, Y.~Matiounine, J.~Smith, and W.L. van Neerven.
+\newblock {Charm electroproduction viewed in the variable flavor number scheme
+  versus fixed order perturbation theory}.
+\newblock {\em Eur.Phys.J.}, C1:301--320, 1998, hep-ph/9612398.
+
+\bibitem{Thorne:2008xf}
+R.S. Thorne and W.K. Tung.
+\newblock {PQCD Formulations with Heavy Quark Masses and Global Analysis}.
+\newblock 2008, 0809.0714.
+
+\bibitem{Kramer:2000hn}
+1~Kramer, Michael, Fredrick~I. Olness, and Davison~E. Soper.
+\newblock {Treatment of heavy quarks in deeply inelastic scattering}.
+\newblock {\em Phys.Rev.}, D62:096007, 2000, hep-ph/0003035.
+
+\bibitem{Collins:1978wz}
+John~C. Collins, Frank Wilczek, and A.~Zee.
+\newblock {Low-Energy Manifestations of Heavy Particles: Application to the
+  Neutral Current}.
+\newblock {\em Phys.Rev.}, D18:242, 1978.
+
+\bibitem{Collins:1998rz}
+John~C. Collins.
+\newblock {Hard scattering factorization with heavy quarks: A General
+  treatment}.
+\newblock {\em Phys.Rev.}, D58:094002, 1998, hep-ph/9806259.
+
+\bibitem{Thorne:1997uu}
+R.S. Thorne and R.G. Roberts.
+\newblock {A Practical procedure for evolving heavy flavor structure
+  functions}.
+\newblock {\em Phys.Lett.}, B421:303--311, 1998, hep-ph/9711223.
+
+\bibitem{Thorne:1997ga}
+R.S. Thorne and R.G. Roberts.
+\newblock {An Ordered analysis of heavy flavor production in deep inelastic
+  scattering}.
+\newblock {\em Phys.Rev.}, D57:6871--6898, 1998, hep-ph/9709442.
+
+\bibitem{Cacciari:1998it}
+Matteo Cacciari, Mario Greco, and Paolo Nason.
+\newblock {The P(T) spectrum in heavy flavor hadroproduction}.
+\newblock {\em JHEP}, 9805:007, 1998, hep-ph/9803400.
+
+\bibitem{Forte:2010ta}
+Stefano Forte, Eric Laenen, Paolo Nason, and Juan Rojo.
+\newblock {Heavy quarks in deep-inelastic scattering}.
+\newblock {\em Nucl.Phys.}, B834:116--162, 2010, 1001.2312.
+
+\bibitem{Dolgov:2000ca}
+D.~Dolgov, R.~Brower, S.~Capitani, John~W. Negele, A.~Pochinsky, et~al.
+\newblock {Moments of structure functions in full QCD}.
+\newblock {\em Nucl.Phys.Proc.Suppl.}, 94:303--306, 2001, hep-lat/0011010.
+
+\bibitem{Horsley:2004uq}
+R.~Horsley.
+\newblock {The Lattice calculation of moments of structure functions}.
+\newblock pages 313--322, 2004, hep-lat/0412007.
+
+\bibitem{Gockeler:2004wp}
+M.~Gockeler, R.~Horsley, D.~Pleiter, Paul~E.L. Rakow, and G.~Schierholz.
+\newblock {A Lattice determination of moments of unpolarised nucleon structure
+  functions using improved Wilson fermions}.
+\newblock {\em Phys.Rev.}, D71:114511, 2005, hep-ph/0410187.
+
+\bibitem{Schroers:2005rm}
+Wolfram Schroers.
+\newblock {Parton distributions from the lattice}.
+\newblock {\em Nucl.Phys.}, A755:333--336, 2005, hep-ph/0501156.
+
+\bibitem{Alekhin:2013nda}
+S.~Alekhin, J.~Bluemlein, and S.~Moch.
+\newblock {The ABM parton distributions tuned to LHC data}.
+\newblock {\em Phys.Rev.}, D89:054028, 2014, 1310.3059.
+
+\bibitem{Alekhin:2012ig}
+S.~Alekhin, J.~Blumlein, and S.~Moch.
+\newblock {Parton Distribution Functions and Benchmark Cross Sections at NNLO}.
+\newblock {\em Phys.Rev.}, D86:054009, 2012, 1202.2281.
+
+\bibitem{Alekhin:2009ni}
+S.~Alekhin, J.~Blumlein, S.~Klein, and S.~Moch.
+\newblock {The 3, 4, and 5-flavor NNLO Parton from Deep-Inelastic-Scattering
+  Data and at Hadron Colliders}.
+\newblock {\em Phys.Rev.}, D81:014032, 2010, 0908.2766.
+
+\bibitem{Gao:2013xoa}
+Jun Gao, Marco Guzzi, Joey Huston, Hung-Liang Lai, Zhao Li, et~al.
+\newblock {The CT10 NNLO Global Analysis of QCD}.
+\newblock {\em Phys.Rev.}, D89:033009, 2014, 1302.6246.
+
+\bibitem{Lai:2010vv}
+Hung-Liang Lai, Marco Guzzi, Joey Huston, Zhao Li, Pavel~M. Nadolsky, et~al.
+\newblock {New parton distributions for collider physics}.
+\newblock {\em Phys.Rev.}, D82:074024, 2010, 1007.2241.
+
+\bibitem{Nadolsky:2008zw}
+Pavel~M. Nadolsky, Hung-Liang Lai, Qing-Hong Cao, Joey Huston, Jon Pumplin,
+  et~al.
+\newblock {Implications of CTEQ global analysis for collider observables}.
+\newblock {\em Phys.Rev.}, D78:013004, 2008, 0802.0007.
+
+\bibitem{Owens:2012bv}
+J.F. Owens, A.~Accardi, and W.~Melnitchouk.
+\newblock {Global parton distributions with nuclear and finite-$Q^2$
+  corrections}.
+\newblock {\em Phys.Rev.}, D87(9):094012, 2013, 1212.1702.
+
+\bibitem{JimenezDelgado:2008hf}
+P.~Jimenez-Delgado and E.~Reya.
+\newblock {Dynamical NNLO parton distributions}.
+\newblock {\em Phys.Rev.}, D79:074023, 2009, 0810.4274.
+
+\bibitem{Gluck:2007ck}
+M.~Gluck, P.~Jimenez-Delgado, and E.~Reya.
+\newblock {Dynamical parton distributions of the nucleon and very small-x
+  physics}.
+\newblock {\em Eur.Phys.J.}, C53:355--366, 2008, 0709.0614.
+
+\bibitem{Aaron:2009aa}
+F.D. Aaron et~al.
+\newblock {Combined Measurement and QCD Analysis of the Inclusive e+- p
+  Scattering Cross Sections at HERA}.
+\newblock {\em JHEP}, 1001:109, 2010, 0911.0884.
+
+\bibitem{::2014uva}
+P.~Belov: et~al.
+\newblock {Parton distribution functions at LO, NLO and NNLO with correlated
+  uncertainties between orders}.
+\newblock 2014, 1404.4234.
+
+\bibitem{Martin:2009iq}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt.
+\newblock {Parton distributions for the LHC}.
+\newblock {\em Eur. Phys. J.}, C63:189--285, 2009, 0901.0002.
+
+\bibitem{Martin:2012da}
+A.D. Martin, A.J.~Th.M. Mathijssen, W.J. Stirling, R.S. Thorne, B.J.A. Watt,
+  et~al.
+\newblock {Extended Parameterisations for MSTW PDFs and their effect on Lepton
+  Charge Asymmetry from W Decays}.
+\newblock {\em Eur.Phys.J.}, C73:2318, 2013, 1211.1215.
+
+\bibitem{Martin:1998sq}
+Alan~D. Martin, R.G. Roberts, W.~James Stirling, and R.S. Thorne.
+\newblock {Parton distributions: A New global analysis}.
+\newblock {\em Eur.Phys.J.}, C4:463--496, 1998, hep-ph/9803445.
+
+\bibitem{Martin:2001es}
+Alan~D. Martin, R.G. Roberts, W.J. Stirling, and R.S. Thorne.
+\newblock {MRST2001: Partons and $\alpha_s$ from precise deep inelastic
+  scattering and Tevatron jet data}.
+\newblock {\em Eur.Phys.J.}, C23:73--87, 2002, hep-ph/0110215.
+
+\bibitem{Martin:2002dr}
+A.D. Martin, R.G. Roberts, W.J. Stirling, and R.S. Thorne.
+\newblock {NNLO global parton analysis}.
+\newblock {\em Phys.Lett.}, B531:216--224, 2002, hep-ph/0201127.
+
+\bibitem{Martin:2004dh}
+A.D. Martin, R.G. Roberts, W.J. Stirling, and R.S. Thorne.
+\newblock {Parton distributions incorporating QED contributions}.
+\newblock {\em Eur.Phys.J.}, C39:155--161, 2005, hep-ph/0411040.
+
+\bibitem{Ball:2012cx}
+Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Christopher~S. Deans, Luigi
+  Del~Debbio, et~al.
+\newblock {Parton distributions with LHC data}.
+\newblock {\em Nucl.Phys.}, B867:244--289, 2013, 1207.1303.
+
+\bibitem{Ball:2011gg}
+Richard~D. Ball, Valerio Bertone, Francesco Cerutti, Luigi Del~Debbio, Stefano
+  Forte, et~al.
+\newblock {Reweighting and Unweighting of Parton Distributions and the LHC W
+  lepton asymmetry data}.
+\newblock {\em Nucl.Phys.}, B855:608--638, 2012, 1108.1758.
+
+\bibitem{Ball:2011uy}
+Richard D.Ball et~al.
+\newblock Unbiased global determination of parton distributions and their
+  uncertainties at nnlo and at lo.
+\newblock {\em Nucl. Phys.}, B855:153--221, 2012, 1107.2652.
+
+\bibitem{Ball:2011mu}
+Richard~D. Ball, Valerio Bertone, Francesco Cerutti, Luigi Del~Debbio, Stefano
+  Forte, et~al.
+\newblock {Impact of Heavy Quark Masses on Parton Distributions and LHC
+  Phenomenology}.
+\newblock {\em Nucl.Phys.}, B849:296--363, 2011, 1101.1300.
+
+\bibitem{Ball:2010de}
+Richard~D. Ball, Luigi Del~Debbio, Stefano Forte, Alberto Guffanti, Jose~I.
+  Latorre, et~al.
+\newblock {A first unbiased global NLO determination of parton distributions
+  and their uncertainties}.
+\newblock {\em Nucl.Phys.}, B838:136--206, 2010, 1002.4407.
+
+\bibitem{Ball:2008by}
+Richard~D. Ball et~al.
+\newblock {A Determination of parton distributions with faithful uncertainty
+  estimation}.
+\newblock {\em Nucl.Phys.}, B809:1--63, 2009, 0808.1231.
+
+\bibitem{Botje:2011sn}
+Michiel Botje et~al.
+\newblock {The PDF4LHC Working Group Interim Recommendations}.
+\newblock 2011, 1101.0538.
+
+\bibitem{Vermaseren:2005qc}
+J.~A.~M. Vermaseren, A.~Vogt, and S.~Moch.
+\newblock {The third-order QCD corrections to deep-inelastic scattering by
+  photon exchange}.
+\newblock {\em Nucl. Phys.}, B724:3--182, 2005, hep-ph/0504242.
+
+\bibitem{Moch:2008fj}
+S.~Moch, J.A.M. Vermaseren, and A.~Vogt.
+\newblock {Third-order QCD corrections to the charged-current structure
+  function F(3)}.
+\newblock {\em Nucl.Phys.}, B813:220--258, 2009, 0812.4168.
+
+\bibitem{Buza:1997mg}
+M.~Buza and W.L. van Neerven.
+\newblock {O (alpha-s**2) contributions to charm production in charged current
+  deep inelastic lepton - hadron scattering}.
+\newblock {\em Nucl.Phys.}, B500:301--324, 1997, hep-ph/9702242.
+
+\bibitem{Buza:1996xr}
+M.~Buza, Y.~Matiounine, J.~Smith, and W.L. van Neerven.
+\newblock {O (alpha-s**2) corrections to polarized heavy flavor production at
+  Q**2 is gt m**2}.
+\newblock {\em Nucl.Phys.}, B485:420--456, 1997, hep-ph/9608342.
+
+\bibitem{Blumlein:2006mh}
+J.~Blumlein, A.~De~Freitas, W.L. van Neerven, and S.~Klein.
+\newblock {The Longitudinal Heavy Quark Structure Function F**Q anti-Q(L) in
+  the Region Q**2 gt m**2 at O(alpha**3(s))}.
+\newblock {\em Nucl.Phys.}, B755:272--285, 2006, hep-ph/0608024.
+
+\bibitem{Bierenbaum:2007qe}
+Isabella Bierenbaum, Johannes Blumlein, and Sebastian Klein.
+\newblock {Two-Loop Massive Operator Matrix Elements and Unpolarized Heavy
+  Flavor Production at Asymptotic Values Q**2 gt m**2}.
+\newblock {\em Nucl.Phys.}, B780:40--75, 2007, hep-ph/0703285.
+
+\bibitem{Bierenbaum:2007dm}
+I.~Bierenbaum, J.~Blumlein, and S.~Klein.
+\newblock {Calculation of massive 2-loop operator matrix elements with outer
+  gluon lines}.
+\newblock {\em Phys.Lett.}, B648:195--200, 2007, hep-ph/0702265.
+
+\bibitem{Bierenbaum:2009zt}
+Isabella Bierenbaum, Johannes Blumlein, and Sebastian Klein.
+\newblock {The Gluonic Operator Matrix Elements at O(alpha(s)**2) for DIS Heavy
+  Flavor Production}.
+\newblock {\em Phys.Lett.}, B672:401--406, 2009, 0901.0669.
+
+\bibitem{Blumlein:2014fqa}
+Johannes Bl{\"u}mlein, Alexander Hasselhuhn, and Torsten Pfoh.
+\newblock {The $O(\alpha_s^2)$ heavy quark corrections to charged current
+  deep-inelastic scattering at large virtualities}.
+\newblock {\em Nucl.Phys.}, B881:1--41, 2014, 1401.4352.
+
+\bibitem{Badelek:1994qg}
+B.~Badelek and J.~Kwiecinski.
+\newblock {Shadowing in the deuteron and the new f2(n) / f2(p) measurements}.
+\newblock {\em Phys.Rev.}, D50:4--8, 1994, hep-ph/9401314.
+
+\bibitem{Benvenuti:1989rh}
+A.C. Benvenuti et~al.
+\newblock {A High Statistics Measurement of the Proton Structure Functions F(2)
+  (x, Q**2) and R from Deep Inelastic Muon Scattering at High Q**2}.
+\newblock {\em Phys.Lett.}, B223:485, 1989.
+
+\bibitem{Benvenuti:1989fm}
+A.C. Benvenuti et~al.
+\newblock {A High Statistics Measurement of the Deuteron Structure Functions F2
+  (X, $Q^2$) and R From Deep Inelastic Muon Scattering at High $Q^2$}.
+\newblock {\em Phys.Lett.}, B237:592, 1990.
+
+\bibitem{Arneodo:1996qe}
+M.~Arneodo et~al.
+\newblock {Measurement of the proton and deuteron structure functions, F2(p)
+  and F2(d), and of the ratio sigma-L / sigma-T}.
+\newblock {\em Nucl.Phys.}, B483:3--43, 1997, hep-ph/9610231.
+
+\bibitem{Arneodo:1996kd}
+M.~Arneodo et~al.
+\newblock {Accurate measurement of F2(d) / F2(p) and R**d - R**p}.
+\newblock {\em Nucl.Phys.}, B487:3--26, 1997, hep-ex/9611022.
+
+\bibitem{Adams:1996gu}
+M.R. Adams et~al.
+\newblock {Proton and deuteron structure functions in muon scattering at
+  470-GeV}.
+\newblock {\em Phys.Rev.}, D54:3006--3056, 1996.
+
+\bibitem{Whitlow:1991uw}
+L.W. Whitlow, E.M. Riordan, S.~Dasu, Stephen Rock, and A.~Bodek.
+\newblock {Precise measurements of the proton and deuteron structure functions
+  from a global analysis of the SLAC deep inelastic electron scattering
+  cross-sections}.
+\newblock {\em Phys.Lett.}, B282:475--482, 1992.
+
+\bibitem{Whitlow:1990gk}
+L.W. Whitlow, Stephen Rock, A.~Bodek, E.M. Riordan, and S.~Dasu.
+\newblock {A Precise extraction of R = sigma-L / sigma-T from a global analysis
+  of the SLAC deep inelastic e p and e d scattering cross-sections}.
+\newblock {\em Phys.Lett.}, B250:193--198, 1990.
+
+\bibitem{Breitweg:1998dz}
+J.~Breitweg et~al.
+\newblock {ZEUS results on the measurement and phenomenology of F(2) at low x
+  and low Q**2}.
+\newblock {\em Eur.Phys.J.}, C7:609--630, 1999, hep-ex/9809005.
+
+\bibitem{Chekanov:2001qu}
+S.~Chekanov et~al.
+\newblock {Measurement of the neutral current cross-section and F(2) structure
+  function for deep inelastic e + p scattering at HERA}.
+\newblock {\em Eur.Phys.J.}, C21:443--471, 2001, hep-ex/0105090.
+
+\bibitem{Chekanov:2002ej}
+S.~Chekanov et~al.
+\newblock {Measurement of high Q**2 e- p neutral current cross-sections at HERA
+  and the extraction of xF(3)}.
+\newblock {\em Eur.Phys.J.}, C28:175--201, 2003, hep-ex/0208040.
+
+\bibitem{Chekanov:2003yv}
+S.~Chekanov et~al.
+\newblock {High Q**2 neutral current cross-sections in e+ p deep inelastic
+  scattering at s**(1/2) = 318-GeV}.
+\newblock {\em Phys.Rev.}, D70:052001, 2004, hep-ex/0401003.
+
+\bibitem{Adloff:2000qk}
+C.~Adloff et~al.
+\newblock {Deep inelastic inclusive e p scattering at low x and a determination
+  of alpha(s)}.
+\newblock {\em Eur.Phys.J.}, C21:33--61, 2001, hep-ex/0012053.
+
+\bibitem{Adloff:2000qj}
+C.~Adloff et~al.
+\newblock {Measurement of neutral and charged current cross-sections in
+  electron - proton collisions at high $Q^{2}$}.
+\newblock {\em Eur.Phys.J.}, C19:269--288, 2001, hep-ex/0012052.
+
+\bibitem{Adloff:2003uh}
+C.~Adloff et~al.
+\newblock {Measurement and QCD analysis of neutral and charged current
+  cross-sections at HERA}.
+\newblock {\em Eur.Phys.J.}, C30:1--32, 2003, hep-ex/0304003.
+
+\bibitem{Chekanov:2003vw}
+S.~Chekanov et~al.
+\newblock {Measurement of high Q**2 charged current cross-sections in e+ p deep
+  inelastic scattering at HERA}.
+\newblock {\em Eur.Phys.J.}, C32:1--16, 2003, hep-ex/0307043.
+
+\bibitem{Andreev:2013vha}
+V.~Andreev et~al.
+\newblock {Measurement of inclusive $e p$ cross sections at high $Q^2$ at
+  $\sqrt s =$ 225 and 252 GeV and of the longitudinal proton structure function
+  $F_L$ at HERA}.
+\newblock {\em Eur.Phys.J.}, C74:2814, 2014, 1312.4821.
+
+\bibitem{Chekanov:2009na}
+S.~Chekanov et~al.
+\newblock {Measurement of the Longitudinal Proton Structure Function at HERA}.
+\newblock {\em Phys.Lett.}, B682:8--22, 2009, 0904.1092.
+
+\bibitem{Adloff:1996xq}
+C.~Adloff et~al.
+\newblock {Inclusive D0 and D*+- production in deep inelastic e p scattering at
+  HERA}.
+\newblock {\em Z.Phys.}, C72:593--605, 1996, hep-ex/9607012.
+
+\bibitem{Adloff:2001zj}
+C.~Adloff et~al.
+\newblock {Measurement of D*+- meson production and F2(c) in deep inelastic
+  scattering at HERA}.
+\newblock {\em Phys.Lett.}, B528:199--214, 2002, hep-ex/0108039.
+
+\bibitem{Aktas:2005iw}
+A.~Aktas et~al.
+\newblock {Measurement of F(2)**c anti-c and F(2)**b anti-b at low Q*2 and x
+  using the H1 vertex detector at HERA}.
+\newblock {\em Eur.Phys.J.}, C45:23--33, 2006, hep-ex/0507081.
+
+\bibitem{Aktas:2004az}
+A.~Aktas et~al.
+\newblock {Measurement of F2($c \bar{c}$) and F2($b \bar{b}$) at high $Q^{2}$
+  using the H1 vertex detector at HERA}.
+\newblock {\em Eur.Phys.J.}, C40:349--359, 2005, hep-ex/0411046.
+
+\bibitem{Breitweg:1999ad}
+J.~Breitweg et~al.
+\newblock {Measurement of D*+- production and the charm contribution to F(2) in
+  deep inelastic scattering at HERA}.
+\newblock {\em Eur.Phys.J.}, C12:35--52, 2000, hep-ex/9908012.
+
+\bibitem{Chekanov:2003rb}
+S.~Chekanov et~al.
+\newblock {Measurement of D*+- production in deep inelastic e+- p scattering at
+  HERA}.
+\newblock {\em Phys.Rev.}, D69:012004, 2004, hep-ex/0308068.
+
+\bibitem{Chekanov:2007ch}
+S.~Chekanov et~al.
+\newblock {Measurement of D mesons production in deep inelastic scattering at
+  HERA}.
+\newblock {\em JHEP}, 0707:074, 2007, 0704.3562.
+
+\bibitem{aaron:2009wt}
+F.~D. Aaron et~al.
+\newblock {Combined Measurement and QCD Analysis of the Inclusive ep Scattering
+  Cross Sections at HERA}.
+\newblock {\em JHEP}, 01:109, 2010, 0911.0884.
+
+\bibitem{Abramowicz:1900rp}
+H.~Abramowicz et~al.
+\newblock {Combination and QCD Analysis of Charm Production Cross Section
+  Measurements in Deep-Inelastic ep Scattering at HERA}.
+\newblock {\em Eur.Phys.J.}, C73:2311, 2013, 1211.1182.
+
+\bibitem{Tzanov:2005kr}
+M.~Tzanov et~al.
+\newblock {Precise measurement of neutrino and anti-neutrino differential cross
+  sections}.
+\newblock {\em Phys.Rev.}, D74:012008, 2006, hep-ex/0509010.
+
+\bibitem{Onengut:2005kv}
+G.~Onengut et~al.
+\newblock {Measurement of nucleon structure functions in neutrino scattering}.
+\newblock {\em Phys.Lett.}, B632:65--75, 2006.
+
+\bibitem{Forte:2013wc}
+Stefano Forte and Graeme Watt.
+\newblock {Progress in the Determination of the Partonic Structure of the
+  Proton}.
+\newblock {\em Ann.Rev.Nucl.Part.Sci.}, 63:291--328, 2013, 1301.6754.
+
+\bibitem{Goncharov:2001qe}
+M.~Goncharov et~al.
+\newblock {Precise measurement of dimuon production cross-sections in muon
+  neutrino Fe and muon anti-neutrino Fe deep inelastic scattering at the
+  Tevatron}.
+\newblock {\em Phys.Rev.}, D64:112006, 2001, hep-ex/0102049.
+
+\bibitem{Anastasiou:2003ds}
+Charalampos Anastasiou, Lance~J. Dixon, Kirill Melnikov, and Frank Petriello.
+\newblock {High precision QCD at hadron colliders: Electroweak gauge boson
+  rapidity distributions at NNLO}.
+\newblock {\em Phys.Rev.}, D69:094008, 2004, hep-ph/0312266.
+
+\bibitem{Catani:2009sm}
+Stefano Catani, Leandro Cieri, Giancarlo Ferrera, Daniel de~Florian, and
+  Massimiliano Grazzini.
+\newblock {Vector boson production at hadron colliders: a fully exclusive QCD
+  calculation at NNLO}.
+\newblock {\em Phys.Rev.Lett.}, 103:082001, 2009, 0903.2120.
+
+\bibitem{Catani:2010en}
+Stefano Catani, Giancarlo Ferrera, and Massimiliano Grazzini.
+\newblock {W Boson Production at Hadron Colliders: The Lepton Charge Asymmetry
+  in NNLO QCD}.
+\newblock {\em JHEP}, 1005:006, 2010, 1002.3115.
+
+\bibitem{Moreno:1990sf}
+G.~Moreno et~al.
+\newblock {Dimuon production in proton - copper collisions at s**(1/2) =
+  38.8-GeV}.
+\newblock {\em Phys. Rev.}, D43:2815--2836, 1991.
+
+\bibitem{deFlorian:2003qf}
+D.~de~Florian and R.~Sassot.
+\newblock {Nuclear parton distributions at next-to-leading order}.
+\newblock {\em Phys.Rev.}, D69:074028, 2004, hep-ph/0311227.
+
+\bibitem{Hirai:2007sx}
+M.~Hirai, S.~Kumano, and T.-H. Nagai.
+\newblock {Determination of nuclear parton distribution functions and their
+  uncertainties in next-to-leading order}.
+\newblock {\em Phys.Rev.}, C76:065207, 2007, 0709.3038.
+
+\bibitem{Kulagin:2007ju}
+Sergey~A. Kulagin and R.~Petti.
+\newblock {Neutrino inelastic scattering off nuclei}.
+\newblock {\em Phys.Rev.}, D76:094023, 2007, hep-ph/0703033.
+
+\bibitem{Eskola:2009uj}
+K.J. Eskola, H.~Paukkunen, and C.A. Salgado.
+\newblock {EPS09: A New Generation of NLO and LO Nuclear Parton Distribution
+  Functions}.
+\newblock {\em JHEP}, 0904:065, 2009, 0902.4154.
+
+\bibitem{Ball:2009mk}
+Richard~D. Ball et~al.
+\newblock {Precision determination of electroweak parameters and the strange
+  content of the proton from neutrino deep-inelastic scattering}.
+\newblock {\em Nucl.Phys.}, B823:195--233, 2009, 0906.1958.
+
+\bibitem{Accardi:2011fa}
+A.~Accardi, W.~Melnitchouk, J.F. Owens, M.E. Christy, C.E. Keppel, et~al.
+\newblock {Uncertainties in determining parton distributions at large x}.
+\newblock {\em Phys.Rev.}, D84:014008, 2011, 1102.3686.
+
+\bibitem{Brady:2011hb}
+L.T. Brady, A.~Accardi, W.~Melnitchouk, and J.F. Owens.
+\newblock {Impact of PDF uncertainties at large x on heavy boson production}.
+\newblock {\em JHEP}, 1206:019, 2012, 1110.5398.
+
+\bibitem{Webb:2003bj}
+Jason~C. Webb.
+\newblock {Measurement of continuum dimuon production in 800-GeV/C proton
+  nucleon collisions}.
+\newblock 2003, hep-ex/0301031.
+
+\bibitem{Towell:2001nh}
+R.S. Towell et~al.
+\newblock {Improved measurement of the anti-d / anti-u asymmetry in the nucleon
+  sea}.
+\newblock {\em Phys.Rev.}, D64:052002, 2001, hep-ex/0103030.
+
+\bibitem{Abazov:2007jy}
+V.M. Abazov et~al.
+\newblock {Measurement of the shape of the boson rapidity distribution for $p
+  \bar{p} \to Z/gamma^* \to e^{+} e^{-}$ + $X$ events produced at $\sqrt{s}$ of
+  1.96-TeV}.
+\newblock {\em Phys.Rev.}, D76:012003, 2007, hep-ex/0702025.
+
+\bibitem{Acosta:2005ud}
+D.~Acosta et~al.
+\newblock {Measurement of the forward-backward charge asymmetry from $W \to e
+  \nu$ production in $p\bar{p}$ collisions at $\sqrt{s} = 1.96$ TeV}.
+\newblock {\em Phys.Rev.}, D71:051104, 2005, hep-ex/0501023.
+
+\bibitem{Abazov:2007pm}
+V.M. Abazov et~al.
+\newblock {Measurement of the muon charge asymmetry from $W$ boson decays}.
+\newblock {\em Phys.Rev.}, D77:011106, 2008, 0709.4254.
+
+\bibitem{Abazov:2008qv}
+V.M. Abazov et~al.
+\newblock {Measurement of the electron charge asymmetry in $p \bar{p} \to W + X
+  \to e \nu + X$ events at $\sqrt{s}$ = 1.96-TeV}.
+\newblock {\em Phys.Rev.Lett.}, 101:211801, 2008, 0807.3367.
+
+\bibitem{Abe:1998rv}
+F.~Abe et~al.
+\newblock {Measurement of the lepton charge asymmetry in $W$ boson decays
+  produced in $p \bar{p}$ collisions}.
+\newblock {\em Phys.Rev.Lett.}, 81:5754--5759, 1998, hep-ex/9809001.
+
+\bibitem{Aaltonen:2007dm}
+T.~Aaltonen et~al.
+\newblock {First measurement of the production of a $W$ boson in association
+  with a single charm quark in $p \bar{p}$ collisions at $\sqrt{s}$ =
+  1.96-TeV}.
+\newblock {\em Phys.Rev.Lett.}, 100:091803, 2008, 0711.2901.
+
+\bibitem{Abazov:2008qz}
+V.M. Abazov et~al.
+\newblock {Measurement of the ratio of the $p \bar{p} \to W^+ c^-$ jet cross
+  section to the inclusive $p \bar{p} \to W +$ jets cross section}.
+\newblock {\em Phys.Lett.}, B666:23--30, 2008, 0803.2259.
+
+\bibitem{Stirling:2012vh}
+W.J. Stirling and E.~Vryonidou.
+\newblock {Charm production in association with an electroweak gauge boson at
+  the LHC}.
+\newblock {\em Phys.Rev.Lett.}, 109:082002, 2012, 1203.6781.
+
+\bibitem{Ellis:1992en}
+Stephen~D. Ellis, Zoltan Kunszt, and Davison~E. Soper.
+\newblock {Two jet production in hadron collisions at order alpha-s**3 in QCD}.
+\newblock {\em Phys.Rev.Lett.}, 69:1496--1499, 1992.
+
+\bibitem{Giele:1994gf}
+W.T. Giele, E.W.~Nigel Glover, and David~A. Kosower.
+\newblock {The Two-Jet Differential Cross Section at ${\cal O}(\alpha_s^3)$ in
+  Hadron Collisions}.
+\newblock {\em Phys.Rev.Lett.}, 73:2019--2022, 1994, hep-ph/9403347.
+
+\bibitem{Nagy:2001fj}
+Zoltan Nagy.
+\newblock {Three jet cross-sections in hadron hadron collisions at
+  next-to-leading order}.
+\newblock {\em Phys.Rev.Lett.}, 88:122003, 2002, hep-ph/0110315.
+
+\bibitem{Nagy:2003tz}
+Zoltan Nagy.
+\newblock {Next-to-leading order calculation of three jet observables in hadron
+  hadron collision}.
+\newblock {\em Phys.Rev.}, D68:094002, 2003, hep-ph/0307268.
+
+\bibitem{Currie:2013dwa}
+James Currie, Aude Gehrmann-De~Ridder, E.W.N. Glover, and Joao Pires.
+\newblock {NNLO QCD corrections to jet production at hadron colliders from
+  gluon scattering}.
+\newblock {\em JHEP}, 1401:110, 2014, 1310.3993.
+
+\bibitem{Glover:2001af}
+E.W.~Nigel Glover, C.~Oleari, and M.E. Tejeda-Yeomans.
+\newblock {Two loop QCD corrections to gluon-gluon scattering}.
+\newblock {\em Nucl.Phys.}, B605:467--485, 2001, hep-ph/0102201.
+
+\bibitem{Glover:2001rd}
+E.W.~Nigel Glover and M.E. Tejeda-Yeomans.
+\newblock {One loop QCD corrections to gluon-gluon scattering at NNLO}.
+\newblock {\em JHEP}, 0105:010, 2001, hep-ph/0104178.
+
+\bibitem{Currie:2013dza}
+James Currie, Aude Gehrmann-De~Ridder, Thomas Gehrmann, E.W.~Nigel Glover, and
+  Joao Pires.
+\newblock {NNLO QCD corrections to dijet production at hadron colliders}.
+\newblock {\em PoS}, RADCOR2013:004, 2014, 1312.5608.
+
+\bibitem{deFlorian:2013qia}
+Daniel de~Florian, Patriz Hinderer, Asmita Mukherjee, Felix Ringer, and Werner
+  Vogelsang.
+\newblock {Approximate next-to-next-to-leading order corrections to hadronic
+  jet production}.
+\newblock {\em Phys.Rev.Lett.}, 112:082001, 2014, 1310.7192.
+
+\bibitem{Kidonakis:2000gi}
+Nikolaos Kidonakis and J.F. Owens.
+\newblock {Effects of higher order threshold corrections in high E(T) jet
+  production}.
+\newblock {\em Phys.Rev.}, D63:054019, 2001, hep-ph/0007268.
+
+\bibitem{Kumar:2013hia}
+Meduri~C. Kumar and Sven-Olaf Moch.
+\newblock {Phenomenology of threshold corrections for inclusive jet production
+  at hadron colliders}.
+\newblock {\em Phys.Lett.}, B730:122--129, 2014, 1309.5311.
+
+\bibitem{Dokshitzer:1997in}
+Yuri~L. Dokshitzer, G.D. Leder, S.~Moretti, and B.R. Webber.
+\newblock {Better jet clustering algorithms}.
+\newblock {\em JHEP}, 9708:001, 1997, hep-ph/9707323.
+
+\bibitem{Wobisch:1998wt}
+M.~Wobisch and T.~Wengler.
+\newblock {Hadronization corrections to jet cross-sections in deep inelastic
+  scattering}.
+\newblock 1998, hep-ph/9907280.
+
+\bibitem{Ellis:1993tq}
+Stephen~D. Ellis and Davison~E. Soper.
+\newblock {Successive combination jet algorithm for hadron collisions}.
+\newblock {\em Phys.Rev.}, D48:3160--3166, 1993, hep-ph/9305266.
+
+\bibitem{Cacciari:2008gp}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {The Anti-k(t) jet clustering algorithm}.
+\newblock {\em JHEP}, 0804:063, 2008, 0802.1189.
+
+\bibitem{Cacciari:2011ma}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {FastJet User Manual}.
+\newblock {\em Eur.Phys.J.}, C72:1896, 2012, 1111.6097.
+
+\bibitem{Abulencia:2007ez}
+A.~Abulencia et~al.
+\newblock {Measurement of the Inclusive Jet Cross Section using the {\boldmath
+  $k_{\rm T}$} algorithmin{\boldmath $p\overline{p}$} Collisions at{\boldmath
+  $\sqrt{s}$} = 1.96 TeV with the CDF II Detector}.
+\newblock {\em Phys.Rev.}, D75:092006, 2007, hep-ex/0701051.
+
+\bibitem{Aaltonen:2008eq}
+T.~Aaltonen et~al.
+\newblock {Measurement of the Inclusive Jet Cross Section at the Fermilab
+  Tevatron p anti-p Collider Using a Cone-Based Jet Algorithm}.
+\newblock {\em Phys.Rev.}, D78:052006, 2008, 0807.2204.
+
+\bibitem{Aaltonen:2008dn}
+T.~Aaltonen et~al.
+\newblock {Search for new particles decaying into dijets in proton-antiproton
+  collisions at s**(1/2) = 1.96-TeV}.
+\newblock {\em Phys.Rev.}, D79:112002, 2009, 0812.4036.
+
+\bibitem{Abazov:2008ae}
+V.M. Abazov et~al.
+\newblock {Measurement of the inclusive jet cross-section in $p \bar{p}$
+  collisions at $s^{91/2)}$ =1.96-TeV}.
+\newblock {\em Phys.Rev.Lett.}, 101:062001, 2008, 0802.2400.
+
+\bibitem{Abazov:2010fr}
+V.M. Abazov et~al.
+\newblock {Measurement of the dijet invariant mass cross section in $p\bar{p}$
+  collisions at $\sqrt{s}=1.96$ TeV}.
+\newblock {\em Phys.Lett.}, B693:531--538, 2010, 1002.4594.
+
+\bibitem{Bourhis:1997yu}
+L.~Bourhis, M.~Fontannaz, and J.P. Guillet.
+\newblock {Quarks and gluon fragmentation functions into photons}.
+\newblock {\em Eur.Phys.J.}, C2:529--537, 1998, hep-ph/9704447.
+
+\bibitem{Gluck:1992zx}
+M.~Gluck, E.~Reya, and A.~Vogt.
+\newblock {Parton fragmentation into photons beyond the leading order}.
+\newblock {\em Phys.Rev.}, D48:116, 1993.
+
+\bibitem{dEnterria:2012yj}
+David d'Enterria and Juan Rojo.
+\newblock Quantitative constraints on the gluon distribution function in the
+  proton from collider isolated-photon data.
+\newblock {\em Nucl.Phys.}, B860:311--338, 2012.
+
+\bibitem{Frixione:1998jh}
+Stefano Frixione.
+\newblock {Isolated photons in perturbative QCD}.
+\newblock {\em Phys.Lett.}, B429:369--374, 1998, hep-ph/9801442.
+
+\bibitem{Owens:1987qy}
+J.~Owens".
+\newblock Large-momentum-transfer production of direct photons, jets, and
+  particles.
+\newblock {\em Reviews of Modern Physics}, 59(2):465--503, 1987.
+
+\bibitem{Aurenche:1988vi}
+P.~Aurenche, R.~Baier, M.~Fontannaz, J.F. Owens, and M.~Werlen.
+\newblock {The Gluon Contents of the Nucleon Probed with Real and Virtual
+  Photons}.
+\newblock {\em Phys.Rev.}, D39:3275, 1989.
+
+\bibitem{Catani:2002ny}
+S.~Catani, M.~Fontannaz, J.P. Guillet, and E.~Pilon.
+\newblock {Cross-section of isolated prompt photons in hadron hadron
+  collisions}.
+\newblock {\em JHEP}, 0205:028, 2002, hep-ph/0204023.
+
+\bibitem{Aurenche:2006vj}
+Patrick Aurenche, Michel Fontannaz, Jean-Philippe Guillet, Eric Pilon, and
+  Monique Werlen.
+\newblock {A New critical study of photon production in hadronic collisions}.
+\newblock {\em Phys.Rev.}, D73:094007, 2006, hep-ph/0602133.
+
+\bibitem{Belghobsi:2009hx}
+Z.~Belghobsi, M.~Fontannaz, J.-Ph. Guillet, G.~Heinrich, E.~Pilon, et~al.
+\newblock {Photon - Jet Correlations and Constraints on Fragmentation
+  Functions}.
+\newblock {\em Phys.Rev.}, D79:114024, 2009, 0903.4834.
+
+\bibitem{Albajar:1988im}
+C.~Albajar et~al.
+\newblock {Direct Photon Production at the CERN Proton - anti-Proton Collider}.
+\newblock {\em Phys.Lett.}, B209:385--396, 1988.
+
+\bibitem{Alitti:1992hn}
+J.~Alitti et~al.
+\newblock {A Measurement of single and double prompt photon production at the
+  CERN $\bar{p} p$ collider}.
+\newblock {\em Phys.Lett.}, B288:386--394, 1992.
+
+\bibitem{Ansari:1988te}
+R.~Ansari et~al.
+\newblock {Direct Photon Production in $\bar{p} p$ Collisions at
+  $\sqrt{s}=630$-{GeV}}.
+\newblock {\em Z.Phys.}, C41:395, 1988.
+
+\bibitem{Adler:2006yt}
+S.S. Adler et~al.
+\newblock {Measurement of direct photon production in p + p collisions at
+  s**(1/2) = 200-GeV}.
+\newblock {\em Phys.Rev.Lett.}, 98:012002, 2007, hep-ex/0609031.
+
+\bibitem{Aaltonen:2009ty}
+T.~Aaltonen et~al.
+\newblock {Measurement of the Inclusive Isolated Prompt Photon Cross Section in
+  p anti-p Collisions at s**(1/2) = 1.96-TeV using the CDF Detector}.
+\newblock {\em Phys.Rev.}, D80:111106, 2009, 0910.3623.
+
+\bibitem{Abazov:2005wc}
+V.M. Abazov et~al.
+\newblock {Measurement of the isolated photon cross section in $p \bar{p}$
+  collisions at $\sqrt{s}$ = 1.96-TeV}.
+\newblock {\em Phys.Lett.}, B639:151--158, 2006, hep-ex/0511054.
+
+\bibitem{Abe:1994rra}
+F.~Abe et~al.
+\newblock {A Precision measurement of the prompt photon cross-section in
+  $p\bar{p}$ collisions at $\sqrt{s} = 1.8$ TeV}.
+\newblock {\em Phys.Rev.Lett.}, 73:2662--2666, 1994.
+
+\bibitem{Acosta:2002ya}
+D.~Acosta et~al.
+\newblock {Comparison of the isolated direct photon cross sections in
+  $p\bar{p}$ collisions at $\sqrt{s}=$ 1.8-TeV and $\sqrt{s}=$ 0.63-TeV}.
+\newblock {\em Phys.Rev.}, D65:112003, 2002, hep-ex/0201004.
+
+\bibitem{Acosta:2004bg}
+D.~Acosta et~al.
+\newblock {Direct photon cross section with conversions at CDF}.
+\newblock {\em Phys.Rev.}, D70:074008, 2004, hep-ex/0404022.
+
+\bibitem{Abachi:1996qz}
+S.~Abachi et~al.
+\newblock {Isolated photon cross-section in the central and forward rapidity
+  regions in $p\bar{p}$ collisions at $\sqrt{s} = 1.8$ TeV}.
+\newblock {\em Phys.Rev.Lett.}, 77:5011--5015, 1996, hep-ex/9603006.
+
+\bibitem{Abazov:2001af}
+V.M. Abazov et~al.
+\newblock {The ratio of the isolated photon cross sections at $\sqrt{s} = 630$
+  GeV and 1800 GeV}.
+\newblock {\em Phys.Rev.Lett.}, 87:251805, 2001, hep-ex/0106026.
+
+\bibitem{Abbott:1999kd}
+B.~Abbott et~al.
+\newblock {The isolated photon cross-section in $p\bar{p}$ collisions at
+  $\sqrt{s} = 1.8$ TeV}.
+\newblock {\em Phys.Rev.Lett.}, 84:2786--2791, 2000, hep-ex/9912017.
+
+\bibitem{Czakon:2013goa}
+Micha{\l} Czakon, Paul Fiedler, and Alexander Mitov.
+\newblock {Total Top-Quark Pair-Production Cross Section at Hadron Colliders
+  Through $O(α\frac{4}{S})$}.
+\newblock {\em Phys.Rev.Lett.}, 110(25):252004, 2013, 1303.6254.
+
+\bibitem{Baernreuther:2012ws}
+Peter B{\"a}rnreuther, Michal Czakon, and Alexander Mitov.
+\newblock {Percent Level Precision Physics at the Tevatron: First Genuine NNLO
+  QCD Corrections to $q \bar{q} \to t \bar{t} + X$}.
+\newblock {\em Phys.Rev.Lett.}, 109:132001, 2012, 1204.5201.
+
+\bibitem{Czakon:2012zr}
+Michal Czakon and Alexander Mitov.
+\newblock {NNLO corrections to top-pair production at hadron colliders: the
+  all-fermionic scattering channels}.
+\newblock {\em JHEP}, 1212:054, 2012, 1207.0236.
+
+\bibitem{Czakon:2012pz}
+Michal Czakon and Alexander Mitov.
+\newblock {NNLO corrections to top pair production at hadron colliders: the
+  quark-gluon reaction}.
+\newblock {\em JHEP}, 1301:080, 2013, 1210.6832.
+
+\bibitem{Aaltonen:2012ttbar}
+T.~Aaltonen et~al. Tevatron electroweak~working group.
+\newblock Combination of the tt production cross section measurements from the
+  tevatron collider.
+\newblock D0-Note-6363, 2012.
+
+\bibitem{DeRoeck:2011na}
+A.~De~Roeck and R.~S. Thorne.
+\newblock {Structure Functions}.
+\newblock 2011, 1103.0555.
+
+\bibitem{Forte:2002fg}
+Stefano Forte, Lluis Garrido, Jose~I. Latorre, and Andrea Piccione.
+\newblock {Neural network parametrization of deep-inelastic structure
+  functions}.
+\newblock {\em JHEP}, 05:062, 2002, hep-ph/0204232.
+
+\bibitem{DelDebbio:2004qj}
+Luigi Del~Debbio, Stefano Forte, Jose~I. Latorre, Andrea Piccione, and Joan
+  Rojo.
+\newblock {Unbiased determination of the proton structure function F2(p) with
+  faithful uncertainty estimation}.
+\newblock {\em JHEP}, 03:080, 2005, hep-ph/0501067.
+
+\bibitem{DelDebbio:2007ee}
+Luigi Del~Debbio, Stefano Forte, Jose~I. Latorre, Andrea Piccione, and Joan
+  Rojo.
+\newblock {Neural network determination of parton distributions: the nonsinglet
+  case}.
+\newblock {\em JHEP}, 03:039, 2007, hep-ph/0701127.
+
+\bibitem{Ball:2011eq}
+Richard~D. Ball et~al.
+\newblock {Parton Distributions: Determining Probabilities in a Space of
+  Functions}.
+\newblock 2011, 1110.1863.
+
+\bibitem{Stump:2001gu}
+D.~Stump, J.~Pumplin, R.~Brock, D.~Casey, J.~Huston, et~al.
+\newblock {Uncertainties of predictions from parton distribution functions. 1.
+  The Lagrange multiplier method}.
+\newblock {\em Phys.Rev.}, D65:014012, 2001, hep-ph/0101051.
+
+\bibitem{Pumplin:2002vw}
+J.~Pumplin, D.R. Stump, J.~Huston, H.L. Lai, Pavel~M. Nadolsky, et~al.
+\newblock {New generation of parton distributions with uncertainties from
+  global QCD analysis}.
+\newblock {\em JHEP}, 0207:012, 2002, hep-ph/0201195.
+
+\bibitem{Ball:2012wy}
+Richard~D. Ball, Stefano Carrazza, Luigi Del~Debbio, Stefano Forte, Jun Gao,
+  et~al.
+\newblock {Parton Distribution Benchmarking with LHC Data}.
+\newblock {\em JHEP}, 1304:125, 2013, 1211.5142.
+
+\bibitem{DAgostini:1993uj}
+G.~D'Agostini.
+\newblock On the use of the covariance matrix to fit correlated data.
+\newblock {\em Nucl.Instrum.Meth.}, A346:306--311, 1994.
+
+\bibitem{Ball:2009qv}
+Richard~D. Ball et~al.
+\newblock {Fitting Parton Distribution Data with Multiplicative Normalization
+  Uncertainties}.
+\newblock {\em JHEP}, 1005:075, 2010, 0912.2276.
+
+\bibitem{MINUIT}
+F~James and M~Roos.
+\newblock Minuit: Function minimization and error analysis, cern program
+  library long writeup d506.
+\newblock 1994.
+
+\bibitem{levenberg}
+K~Levenberg.
+\newblock A method for the solution of certain non-linear problems in least
+  squares.
+\newblock {\em Quart. Appl. Math}, 2(164), 1944.
+
+\bibitem{marquardt}
+D~W Marquardt.
+\newblock An algorithm for least-squares estimation of nonlinear parameters.
+\newblock {\em SIAM J. Appl. Math}, 11(431), 1963.
+
+\bibitem{bishopnn}
+C.M. Bishop.
+\newblock {\em Neural networks for Patern Recognition}.
+\newblock Oxford University Press, 1995.
+
+\bibitem{nnoverlearn}
+D.~J.; Luik A.~I. Tetko, I. V.;~Livingstone.
+\newblock Neural network studies. 1. comparison of overfitting and
+  overtraining.
+\newblock {\em J. Chem. Inf. Comput. Sci.}, 35:826--833, 1995.
+
+\bibitem{Alekhin:2002fv}
+Sergey Alekhin.
+\newblock {Parton distributions from deep-inelastic scattering data}.
+\newblock {\em Phys. Rev.}, D68:014002, 2003, hep-ph/0211096.
+
+\bibitem{Pumplin:2000vx}
+J.~Pumplin, D.~R. Stump, and W.~K. Tung.
+\newblock {Multivariate fitting and the error matrix in global analysis of
+  data}.
+\newblock {\em Phys. Rev.}, D65:014011, 2001, hep-ph/0008191.
+
+\bibitem{Pumplin:2001ct}
+J.~Pumplin et~al.
+\newblock {Uncertainties of predictions from parton distribution functions. 2.
+  The Hessian method}.
+\newblock {\em Phys. Rev.}, D65:014013, 2001, hep-ph/0101032.
+
+\bibitem{Martin:2002aw}
+A.D. Martin, R.G. Roberts, W.J. Stirling, and R.S. Thorne.
+\newblock {Uncertainties of predictions from parton distributions. 1:
+  Experimental errors}.
+\newblock {\em Eur.Phys.J.}, C28:455--473, 2003, hep-ph/0211080.
+
+\bibitem{Giele:1998gw}
+Walter~T. Giele and Stephane Keller.
+\newblock {Implications of hadron collider observables on parton distribution
+  function uncertainties}.
+\newblock {\em Phys. Rev.}, D58:094023, 1998, hep-ph/9803393.
+
+\bibitem{Giele:2001mr}
+Walter~T. Giele, Stephane~A. Keller, and David~A. Kosower.
+\newblock {Parton distribution function uncertainties}.
+\newblock 2001, hep-ph/0104052.
+
+\bibitem{Watt:2012tq}
+G.~Watt and R.S. Thorne.
+\newblock {Study of Monte Carlo approach to experimental uncertainty
+  propagation with MSTW 2008 PDFs}.
+\newblock {\em JHEP}, 1208:052, 2012, 1205.4024.
+
+\bibitem{Watt:2011kp}
+G.~Watt.
+\newblock {Parton distribution function dependence of benchmark Standard Model
+  total cross sections at the 7 TeV LHC}.
+\newblock {\em JHEP}, 1109:069, 2011, 1106.5788.
+
+\bibitem{Dittmar:2009ii}
+M.~Dittmar, S.~Forte, A.~Glazov, S.~Moch, G.~Altarelli, et~al.
+\newblock {Parton Distributions}.
+\newblock 2009, 0901.2504.
+
+\bibitem{Ball:2010gb}
+Richard~D. Ball et~al.
+\newblock {Reweighting NNPDFs: the W lepton asymmetry}.
+\newblock {\em Nucl. Phys.}, B849:112--143, 2011, 1012.0836.
+
+\bibitem{Carli:2010rw}
+Tancredi Carli et~al.
+\newblock {A posteriori inclusion of parton density functions in NLO QCD
+  final-state calculations at hadron colliders: The APPLGRID Project}.
+\newblock {\em Eur. Phys. J.}, C66:503--524, 2010, 0911.2985.
+
+\bibitem{Kluge:2006xs}
+T.~Kluge, K.~Rabbertz, and M.~Wobisch.
+\newblock fastnlo: Fast pqcd calculations for pdf fits.
+\newblock pages 483--486, 2006, hep-ph/0609285.
+\newblock Tevatron-for-LHC Workshop (2006).
+
+\bibitem{SSE}
+Intel Corp.
+\newblock Intel{\textregistered} 64 and ia-32 architectures software developer
+  manual.
+
+\bibitem{Campbell:2000bg}
+John~M. Campbell and R.~Keith Ellis.
+\newblock {Radiative corrections to Z b anti-b production}.
+\newblock {\em Phys.Rev.}, D62:114012, 2000, hep-ph/0006304.
+
+\bibitem{Anastasiou:2006jv}
+Charalampos Anastasiou, Ruth Britto, Bo~Feng, Zoltan Kunszt, and Pierpaolo
+  Mastrolia.
+\newblock {D-dimensional unitarity cut method}.
+\newblock {\em Phys.Lett.}, B645:213--216, 2007, hep-ph/0609191.
+
+\bibitem{Berger:2008sj}
+C.F. Berger, Z.~Bern, L.J. Dixon, F.~Febres~Cordero, D.~Forde, et~al.
+\newblock {An Automated Implementation of On-Shell Methods for One-Loop
+  Amplitudes}.
+\newblock {\em Phys.Rev.}, D78:036003, 2008, 0803.4180.
+
+\bibitem{Denner:2005nn}
+Ansgar Denner and S.~Dittmaier.
+\newblock {Reduction schemes for one-loop tensor integrals}.
+\newblock {\em Nucl.Phys.}, B734:62--115, 2006, hep-ph/0509141.
+
+\bibitem{Ellis:2007br}
+R.~Keith Ellis, W.T. Giele, and Z.~Kunszt.
+\newblock {A Numerical Unitarity Formalism for Evaluating One-Loop Amplitudes}.
+\newblock {\em JHEP}, 0803:003, 2008, 0708.2398.
+
+\bibitem{Giele:2008ve}
+Walter~T. Giele, Zoltan Kunszt, and Kirill Melnikov.
+\newblock {Full one-loop amplitudes from tree amplitudes}.
+\newblock {\em JHEP}, 0804:049, 2008, 0801.2237.
+
+\bibitem{Ossola:2006us}
+Giovanni Ossola, Costas~G. Papadopoulos, and Roberto Pittau.
+\newblock {Reducing full one-loop amplitudes to scalar integrals at the
+  integrand level}.
+\newblock {\em Nucl.Phys.}, B763:147--169, 2007, hep-ph/0609007.
+
+\bibitem{Alwall:2011uj}
+Johan Alwall, Michel Herquet, Fabio Maltoni, Olivier Mattelaer, and Tim
+  Stelzer.
+\newblock {MadGraph 5 : Going Beyond}.
+\newblock {\em JHEP}, 1106:128, 2011, 1106.0522.
+
+\bibitem{Bevilacqua:2011xh}
+G.~Bevilacqua, M.~Czakon, M.V. Garzelli, A.~van Hameren, A.~Kardos, et~al.
+\newblock {HELAC-NLO}.
+\newblock {\em Comput.Phys.Commun.}, 184:986--997, 2013, 1110.1499.
+
+\bibitem{Gleisberg:2003xi}
+Tanju Gleisberg, Stefan Hoeche, Frank Krauss, Andreas Schalicke, Steffen
+  Schumann, et~al.
+\newblock {SHERPA 1. alpha: A Proof of concept version}.
+\newblock {\em JHEP}, 0402:056, 2004, hep-ph/0311263.
+
+\bibitem{Gleisberg:2008ta}
+T.~Gleisberg, Stefan. Hoeche, F.~Krauss, M.~Schonherr, S.~Schumann, et~al.
+\newblock {Event generation with SHERPA 1.1}.
+\newblock {\em JHEP}, 0902:007, 2009, 0811.4622.
+
+\bibitem{DelDebbio:2013kxa}
+Luigi Del~Debbio, Nathan~P. Hartland, and Steffen Schumann.
+\newblock {MCgrid: projecting cross section calculations on grids}.
+\newblock {\em Comput.Phys.Commun.}, 185:2115--2126, 2014, 1312.4460.
+
+\bibitem{Dobbs:2001ck}
+Matt Dobbs and Jorgen~Beck Hansen.
+\newblock {The HepMC C++ Monte Carlo event record for High Energy Physics}.
+\newblock {\em Comput.Phys.Commun.}, 134:41--46, 2001.
+
+\bibitem{Catani:1996vz}
+S.~Catani and M.H. Seymour.
+\newblock {A General algorithm for calculating jet cross-sections in NLO QCD}.
+\newblock {\em Nucl.Phys.}, B485:291--419, 1997, hep-ph/9605323.
+
+\bibitem{Frixione:1995ms}
+S.~Frixione, Z.~Kunszt, and A.~Signer.
+\newblock {Three jet cross-sections to next-to-leading order}.
+\newblock {\em Nucl.Phys.}, B467:399--442, 1996, hep-ph/9512328.
+
+\bibitem{Frixione:1997np}
+S.~Frixione.
+\newblock {A General approach to jet cross-sections in QCD}.
+\newblock {\em Nucl.Phys.}, B507:295--314, 1997, hep-ph/9706545.
+
+\bibitem{Bern:2013zja}
+Z.~Bern, L.J. Dixon, F.~Febres~Cordero, S.~H{\"o}che, H.~Ita, et~al.
+\newblock {Ntuples for NLO Events at Hadron Colliders}.
+\newblock {\em Comput.Phys.Commun.}, 185:1443--1460, 2014, 1310.7439.
+
+\bibitem{LHCb:2011xqa}
+{Inclusive jets and dijets in LHCb}.
+\newblock {\em LHCb-CONF-2011-015}, 2011.
+
+\bibitem{Aad:2010ad}
+G.~Aad et~al.
+\newblock {Measurement of inclusive jet and dijet cross sections in
+  proton-proton collisions at 7 TeV centre-of-mass energy with the ATLAS
+  detector}.
+\newblock {\em Eur.Phys.J.}, C71:1512, 2011, 1009.5908.
+
+\bibitem{Aad:2011fc}
+Georges Aad et~al.
+\newblock {Measurement of inclusive jet and dijet production in $pp$ collisions
+  at $\sqrt{s}=7$ TeV using the ATLAS detector}.
+\newblock {\em Phys.Rev.}, D86:014022, 2012, 1112.6297.
+
+\bibitem{Aad:2013lpa}
+Georges Aad et~al.
+\newblock {Measurement of the inclusive jet cross section in pp collisions at
+  sqrt(s)=2.76 TeV and comparison to the inclusive jet cross section at
+  sqrt(s)=7 TeV using the ATLAS detector}.
+\newblock {\em Eur.Phys.J.}, C73:2509, 2013, 1304.4739.
+
+\bibitem{CMS:2011ab}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the Inclusive Jet Cross Section in $pp$ Collisions at
+  $\sqrt{s}=7$ TeV}.
+\newblock {\em Phys.Rev.Lett.}, 107:132001, 2011, 1106.0208.
+
+\bibitem{Chatrchyan:2012gwa}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the inclusive production cross sections for forward
+  jets and for dijet events with one forward and one central jet in $pp$
+  collisions at $\sqrt{s}=7$ TeV}.
+\newblock {\em JHEP}, 1206:036, 2012, 1202.0704.
+
+\bibitem{Chatrchyan:2012bja}
+Serguei Chatrchyan et~al.
+\newblock {Measurements of differential jet cross sections in proton-proton
+  collisions at $\sqrt{s}=7$ TeV with the CMS detector}.
+\newblock {\em Phys.Rev.}, D87(11):112002, 2013, 1212.6660.
+
+\bibitem{Chatrchyan:2011wt}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the Rapidity and Transverse Momentum Distributions of
+  $Z$ Bosons in $pp$ Collisions at $\sqrt{s}=7$ TeV}.
+\newblock {\em Phys.Rev.}, D85:032002, 2012, 1110.4973.
+
+\bibitem{CMS-PAS-SMP-12-025}
+{Measurement of the transverse momentum distributions of Z Bosons decaying to
+  dimuons in pp collisions at sqrt(s)=8 TeV}.
+\newblock Technical Report CMS-PAS-SMP-12-025, CERN, Geneva, 2013.
+
+\bibitem{CMS-PAS-SMP-13-013}
+{Measurement of Z production as a function of pT, Y}.
+\newblock Technical Report CMS-PAS-SMP-13-013, CERN, Geneva, 2014.
+
+\bibitem{Chatrchyan:2011jz}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the lepton charge asymmetry in inclusive $W$
+  production in pp collisions at $\sqrt{s} = 7$ TeV}.
+\newblock {\em JHEP}, 1104:050, 2011, 1103.3470.
+
+\bibitem{Chatrchyan:2012xt}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the electron charge asymmetry in inclusive $W$
+  production in $pp$ collisions at $\sqrt{s}=7$ TeV}.
+\newblock {\em Phys.Rev.Lett.}, 109:111806, 2012, 1206.2598.
+
+\bibitem{Chatrchyan:2013mza}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the muon charge asymmetry in inclusive pp $\to$ W + X
+  production at $\sqrt{s}$=7 TeV and an improved determination of light parton
+  distribution functions}.
+\newblock 2013, 1312.6283.
+
+\bibitem{Aad:2011yna}
+Georges Aad et~al.
+\newblock {Measurement of the Muon Charge Asymmetry from W Bosons Produced in
+  pp Collisions at $\sqrt{s} = 7$ TeV with the ATLAS detector}.
+\newblock {\em Phys.Lett.}, B701:31--49, 2011, 1103.2929.
+
+\bibitem{Aad:2011gj}
+Georges Aad et~al.
+\newblock {Measurement of the transverse momentum distribution of Z/gamma*
+  bosons in proton-proton collisions at $\sqrt{s}=7$ TeV with the ATLAS
+  detector}.
+\newblock {\em Phys.Lett.}, B705:415--434, 2011, 1107.2381.
+
+\bibitem{Aad:2011fp}
+Georges Aad et~al.
+\newblock {Measurement of the Transverse Momentum Distribution of $W$ Bosons in
+  $pp$ Collisions at $\sqrt{s}=7$ TeV with the ATLAS Detector}.
+\newblock {\em Phys.Rev.}, D85:012005, 2012, 1108.6308.
+
+\bibitem{Aad:2011dm}
+Georges Aad et~al.
+\newblock {Measurement of the inclusive $W^\pm$ and Z/gamma cross sections in
+  the electron and muon decay channels in $pp$ collisions at $\sqrt{s}=7$ TeV
+  with the ATLAS detector}.
+\newblock {\em Phys.Rev.}, D85:072004, 2012, 1109.5141.
+
+\bibitem{Aaij:2012vn}
+R~Aaij et~al.
+\newblock {Inclusive $W$ and $Z$ production in the forward region at $\sqrt{s}
+  = 7$ TeV}.
+\newblock {\em JHEP}, 1206:058, 2012, 1204.1620.
+
+\bibitem{Aad:2011tw}
+Georges Aad et~al.
+\newblock {Measurement of the inclusive isolated prompt photon cross-section in
+  $pp$ collisions at $\sqrt{s}=7$ TeV using 35 pb-1 of ATLAS data}.
+\newblock {\em Phys.Lett.}, B706:150--167, 2011, 1108.0253.
+
+\bibitem{ATLAS:2012ar}
+Georges Aad et~al.
+\newblock {Measurement of the production cross section of an isolated photon
+  associated with jets in proton-proton collisions at $\sqrt{s}=7$ TeV with the
+  ATLAS detector}.
+\newblock {\em Phys.Rev.}, D85:092014, 2012, 1203.3161.
+
+\bibitem{Chatrchyan:2011ue}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the Differential Cross Section for Isolated Prompt
+  Photon Production in pp Collisions at 7 TeV}.
+\newblock {\em Phys.Rev.}, D84:052011, 2011, 1108.2044.
+
+\bibitem{ATLAS:2012jyc}
+{Measurement of the top quark pair production cross section in the
+  single-lepton channel with ATLAS in proton-proton collisions at 8 TeV using
+  kinematic fits with b-tagging}.
+\newblock 2012.
+
+\bibitem{ATLAS:2012fja}
+{Statistical combination of top quark pair production cross-section
+  measurements using dilepton, single-lepton, and all-hadronic final states at
+  √s = 7 TeV with the ATLAS detector}.
+\newblock 2012.
+
+\bibitem{Chatrchyan:2012bra}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of the $t\bar{t}$ production cross section in the
+  dilepton channel in $pp$ collisions at $\sqrt{s}=7$ TeV}.
+\newblock {\em JHEP}, 1211:067, 2012, 1208.2671.
+
+\bibitem{CMS:2012iba}
+CMS Collaboration.
+\newblock {Top pair cross section in e/mu+jets at 8 TeV}.
+\newblock 2012.
+
+\bibitem{Czakon:2011xx}
+Michal Czakon and Alexander Mitov.
+\newblock {Top++: A Program for the Calculation of the Top-Pair Cross-Section
+  at Hadron Colliders}.
+\newblock 2011, 1112.5675.
+
+\bibitem{Czakon:2013tha}
+Michal Czakon, Michelangelo~L. Mangano, Alexander Mitov, and Juan Rojo.
+\newblock {Constraints on the gluon PDF from top quark pair production at
+  hadron colliders}.
+\newblock {\em JHEP}, 1307:167, 2013, 1303.7215.
+
+\bibitem{Catani:2007vq}
+Stefano Catani and Massimiliano Grazzini.
+\newblock {An NNLO subtraction formalism in hadron collisions and its
+  application to Higgs boson production at the LHC}.
+\newblock {\em Phys.Rev.Lett.}, 98:222002, 2007, hep-ph/0703012.
+
+\bibitem{Lai:2007dq}
+H.L. Lai, Pavel~M. Nadolsky, J.~Pumplin, D.~Stump, W.K. Tung, et~al.
+\newblock {The Strange parton distribution of the nucleon: Global analysis and
+  applications}.
+\newblock {\em JHEP}, 0704:089, 2007, hep-ph/0702268.
+
+\bibitem{Alekhin:2008mb}
+S.~Alekhin, Sergey~A. Kulagin, and R.~Petti.
+\newblock {Determination of Strange Sea Distributions from Neutrino-Nucleon
+  Deep Inelastic Scattering}.
+\newblock {\em Phys.Lett.}, B675:433--440, 2009, 0812.4448.
+
+\bibitem{Aad:2012sb}
+Georges Aad et~al.
+\newblock {Determination of the strange quark density of the proton from ATLAS
+  measurements of the $W \to \ell \nu$ and $Z \to \ell\ell$ cross sections}.
+\newblock {\em Phys.Rev.Lett.}, 109:012001, 2012, 1203.4051.
+
+\bibitem{Alekhin:2014sya}
+S.~Alekhin, J.~Bluemlein, L.~Caminadac, K.~Lipka, K.~Lohwasser, et~al.
+\newblock {Determination of Strange Sea Quark Distributions from Fixed-target
+  and Collider Data}.
+\newblock 2014, 1404.6469.
+
+\bibitem{Chatrchyan:2013uja}
+Serguei Chatrchyan et~al.
+\newblock {Measurement of associated W + charm production in pp collisions at
+  $\sqrt{s}$ = 7 TeV}.
+\newblock {\em JHEP}, 1402:013, 2014, 1310.1138.
+
+\bibitem{Anastasiou:2011pi}
+Charalampos Anastasiou, Stephan Buehler, Franz Herzog, and Achilleas
+  Lazopoulos.
+\newblock {Total cross-section for Higgs boson hadroproduction with anomalous
+  Standard Model interactions}.
+\newblock {\em JHEP}, 1112:058, 2011, 1107.0683.
+
+\bibitem{openmp08}
+OpenMP Architecture~Review Board.
+\newblock {OpenMP} application program interface version 3.0.
+\newblock http://www.openmp.org/mp-documents/spec30.pdf, May 2008.
+
+\bibitem{Giele:2002hx}
+W.~Giele, E.W.~Nigel Glover, I.~Hinchliffe, J.~Huston, Eric Laenen, et~al.
+\newblock {The QCD / SM working group: Summary report}.
+\newblock pages 275--426, 2002, hep-ph/0204316.
+
+\bibitem{Lai:1999wy}
+H.L. Lai et~al.
+\newblock {Global QCD analysis of parton structure of the nucleon: CTEQ5 parton
+  distributions}.
+\newblock {\em Eur.Phys.J.}, C12:375--392, 2000, hep-ph/9903282.
+
+\bibitem{Montana:1989:TFN:1623755.1623876}
+David~J. Montana and Lawrence Davis.
+\newblock Training feedforward neural networks using genetic algorithms.
+\newblock In {\em Proceedings of the 11th International Joint Conference on
+  Artificial Intelligence - Volume 1}, IJCAI'89, pages 762--767, San Francisco,
+  CA, USA, 1989. Morgan Kaufmann Publishers Inc.
+
+\bibitem{Beringer:1900zz}
+J.~Beringer et~al.
+\newblock {Review of Particle Physics (RPP)}.
+\newblock {\em Phys.Rev.}, D86:010001, 2012.
+
+\end{thebibliography}
