@@ -19,7 +19,7 @@ not survive the scattering process and fragments into an arbitrary hadronic fina
 
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.5]{2-PDFs/figs/DIS.eps}
+\includegraphics[scale=0.5]{2-PDFs/figs/DIS.pdf}
 \caption{Deep inelastic scattering of a charged lepton with a proton target.}
 \label{fig:DIS}
 \end{figure}
@@ -58,7 +58,7 @@ It is convenient now to define a projection vector $n$ with the properties $ p \
 where the quantity in the second equation is known as the longitudinal structure function. So far, few assumptions have been made about the form of the EM hadronic tensor $W_{\mu\nu}$, we have simply parametrised it in terms of a Lorentz invariant tensor structure and structure functions. Feynman's parton model allows us to describe more of the hadronic tensor with perturbation theory by proposing a composite proton formed as a bound state of fundamental, spin-$1/2$ constituents: the \emph{partons}. 
 
 The parton model approximation states that for a sufficiently hard interaction, the virtual photon only interacts with a single point-like parton inside the target proton and we can treat the partons as approximately free particles. The hadronic tensor then admits a probabilistic expansion in terms of Parton Distributions which encode the probability of the hard photon interacting with a constituent parton carrying a faction $\xi$ of the parent proton's momentum. The probability of interacting with a parton carrying between $\xi$ and $\xi+\delta\xi$ of the proton's momentum being given by $f(\xi)\delta\xi$ where $f(\xi)$ is the interaction probability for a parton with momentum $\xi p$. Diagrammatically we may therefore construct the photon-hadron interaction as a weighted sum of partonic diagrams:
-\be \left| \vcenter{\hbox{\includegraphics[height=2cm]{2-PDFs/figs/convolution1.eps}}} \right|^2= \sum_i^{N_{part}}f_i(\xi,Q^2) \otimes \left| \vcenter{\hbox{\includegraphics[height=2cm]{2-PDFs/figs/convolution2.eps}}}\right|^2(\xi), \nonumber\ee
+\be \left| \vcenter{\hbox{\includegraphics[height=2cm]{2-PDFs/figs/convolution1.pdf}}} \right|^2= \sum_i^{N_{part}}f_i(\xi,Q^2) \otimes \left| \vcenter{\hbox{\includegraphics[height=2cm]{2-PDFs/figs/convolution2.pdf}}}\right|^2(\xi), \nonumber\ee
 where we have introduced the multiplicative convolution
 \be (f \otimes g )(x) = \int_0^1\; \frac{d\xi}{\xi}\; f\left(\frac{\xi}{x}\right) g(\xi).\ee
 
@@ -105,7 +105,7 @@ At one loop order, there are three diagrams that contribute to the $qq\gamma$ ve
 
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.6]{2-PDFs/figs/1loopDIS.eps}
+\includegraphics[scale=0.6]{2-PDFs/figs/1loopDIS.pdf}
 \end{figure}
 
 All four of these diagrams are separately divergent. When appropriately regularised however, the divergences in the final state real emission and virtual correction diagrams cancel explicitly as a consequence of the IR safety of QCD, yielding a finite contribution to the cross section. However the divergences present in the real emission diagrams from the initial state partons are not subject to the same cancellations, as they modify the momenta at the interaction vertex. 
@@ -119,7 +119,7 @@ Like the real emission diagram of a gluon from an initial state quark, the initi
 Here the $i$ once again refers to the partonic species at the interaction vertex, and we have introduced an infrared cutoff $\kappa$ to regulate the parton splitting. The sum over splitting functions arises from the multiple contributions from partonic species $j$ splitting to $i$:
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.6]{2-PDFs/figs/qgq.eps}
+\includegraphics[scale=0.6]{2-PDFs/figs/qgq.pdf}
 \end{figure}
 
 The splitting functions $P_{ij}$  were known for some time at leading and next-to-leading accuracy \cite{Gross:1973ju,Georgi:1951sr,Floratos:1977au,Altarelli:1977zs,GonzalezArroyo:1979df,Floratos:1978ny,Furmanski:1980cm,Curci:1980uw,GonzalezArroyo:1979he,Floratos:1981hs,Hamberg:1991qt}, and more recently extended to next-next-to-leading order accuracy \cite{Moch:2004pa,Vogt:2004mw}. After convoluting the parton level functions with the PDFs, we obtain the full structure function 
@@ -206,7 +206,7 @@ F^{H}(n_l, Q^2,m_h^2) &=& \sum_o^{n_l} H_i\left(n_l, \frac{Q^2}{m_h^2}, \frac{\m
 Here $L$ denotes the Wilson coefficients that do not contain heavy quark lines, and $H$ includes only the diagrams that do. In this instance the heavy quark structure function first contributes at $\mathcal{O}(\alpha_S)$ via the splitting of an initial state gluon into a $h\bar{h}$ pair:
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.6]{2-PDFs/figs/FFNS.eps}
+\includegraphics[scale=0.6]{2-PDFs/figs/FFNS.pdf}
 \end{figure}
 
 This approach is known as the \emph{decoupling} or FFN scheme where the only quarks treated as partons are the $n_l$ light quarks. The expression in Eqn.~\ref{eq:FFN} is unique up to terms of order $m_l^2/Q^2$ in the light quark masses which are typically treated as part of the factorisation level corrections of $\mathcal{O}(\Lambda^2_{\mathrm{QCD}}/Q^2)$. While accurate in the quark mass threshold region and below, this scheme suffers from unresummed logarithms of the ratio $Q^2/m_h^2$ contained in the Wilson coefficients which can become large and damage the convergence of the perturbative series at scales much larger than the heavy quark mass.
@@ -218,7 +218,7 @@ In this instance the heavy quark contribution to the structure function first ar
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{2-PDFs/figs/ZMVFNS.eps}
+\includegraphics[scale=0.6]{2-PDFs/figs/ZMVFNS.pdf}
 \end{figure}
 
 In the ZM-VFNS the heavy quark PDFs are set to zero below mass threshold and evolved as a massless parton according to the DGLAP equations for scales greater than the heavy quark mass. While this method alleviates the difficulties present in the FFN scheme at large scales, its treatment of heavy quarks only in terms of massless partons completely ignores the massive contributions to the Wilson coefficients and is therefore no longer exact. The reliability of the ZM scheme is therefore particularly reduced in the region where powers of $m_h^2/Q^2$ are significant. 
