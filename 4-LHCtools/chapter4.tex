@@ -214,7 +214,7 @@ of theory concerns from the calculation.
 The {\tt FK} convolution also benefits from requiring considerably fewer floating point operations than a typical { \tt APPLgrid} convolution. This is particularly evident when studying multi-scale processes, where the sum over the scale grid is precomputed. The product over PDF flavours is now also limited to the $n_f$, typically seven, light partons rather than the general 13 parton basis. Of course in the {\tt FK} procedure the ability to vary scales and the strong coupling with a single grid is lost, and new {\tt FK} tables $\widetilde{W}$ must be generated for different theoretical treatments.
 
 The procedure outlined above for generating {\tt FK} tables from { \tt APPLgrid} or { \tt FastNLO} files has been implemented in a {\tt C++} framework, alongside a comprehensive toolchain for performing {\tt FK} table {\tt I/O} and optimisation. The convolution in Eqn.~\ref{eq:FK} has been implemented for a general PDF input (for example Neural Network or LHAPDF) and extensively optimised. The optimisation ensures only the relevant parton sub channels and $x$-grid entries enter the product, which is performed as a memory-aligned scalar product with the use of SSE intrinsics~\cite{SSE}.   Table~\ref{tab:FKtimings} compares the relative speed improvement compared to the { \tt APPLgrid} calculation of the basic  {\tt FK} convolution and the optimised version, using PDFs obtained through the LHAPDF library.
-\begin{table}[htdp]
+\begin{table}[htp]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline Observable &APPLgrid & FK & optimised FK \\
